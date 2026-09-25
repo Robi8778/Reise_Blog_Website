@@ -187,4 +187,55 @@ details > summary {
     display: flex;
     justify-content: space-between;
     align-items: center;
-} */
+} */.landing-section-area {
+  position: relative;
+  width: 1440px;
+  height: 550px;
+
+  margin: 0 auto;
+}
+
+.background {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: 1;
+}
+
+.yellow-image {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 2;
+}
+
+.circle {
+  position: absolute;
+  bottom: 20%;
+  left: 30%;
+  z-index: 3;
+}
+
+.landing-section-area > h1 {
+  font-family: "Arima", serif;
+  color: rgba(84, 55, 13, 1);
+  font-size: 60px;
+  font-weight: bold;
+  position: relative;
+  top: 20%;
+  left: 8%;
+  z-index: 4;
+}
+
+.landing-section-area > p {
+  font-family: "Palanquin", serif;
+  color: rgba(84, 55, 13, 1);
+  font-size: 28px;
+  font-weight: 500;
+  position: relative;
+  top: 21%;
+  left: 8%;
+  z-index: 4;
+  line-height: 1.2;
+}
