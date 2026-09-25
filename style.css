@@ -1,0 +1,190 @@
+
+/* HERE STARTS THE PART OF THE HEADER */
+
+.header-area {
+    width: 100%;
+    height: 128px;
+    background-color: #4EA487;
+
+    display: flex;
+    align-items: center;
+    /* gap: 102px; */
+}
+
+.header-area img {
+    height: 72px;
+}
+
+.navi-bar {
+    display: flex;
+}
+
+.navi-bar-navi-points {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+.navi-bar ul {
+    list-style-type: none;
+}
+
+.navi-bar-navi-points a {
+    text-decoration: none;
+    color: #F8F5EB;
+}
+
+
+
+
+
+
+
+/* HERE STARTS THE PART OF THE FAQ */
+
+
+
+.faq-headline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.faq-part {
+    display: flex;
+
+    flex-direction: column;
+    gap: 32px;
+}
+
+.faq-part details {
+    background-color: #F1C953;
+    /* display: flex;
+    align-items: center;
+    flex-direction: row; */
+
+}
+
+.faq-part summary {
+    height: 56px;
+    border-radius: 5px;
+
+    width: 100%;
+    
+}
+
+details > summary {
+    /* display: flex; */
+    /* justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse; */
+    cursor: pointer;
+
+    background-color: #F1C953;
+}
+
+
+
+.content-faq {
+    background-color: #FFFFFF;
+}
+
+
+
+
+
+
+
+
+/* HERE STARTS THE PART OF THE FOOTER */
+
+
+.footer {
+    width: 100%;
+    height: 128px;
+    background-color: #4EA487;
+
+    display: flex;
+    align-items: center;
+}
+
+.footer-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #4EA487;
+    height: 120px;
+
+}
+
+
+.additionals {
+    display: flex;
+    /* gap: 4px; */
+}
+
+
+.footer-additionals-navi-bar {
+    display: flex;
+}
+
+.footer-additionals-navi-bar-navi-points {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-additionals-navi-bar {
+    display: flex;
+}
+
+.footer-additionals-navi-bar-navi-points {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+.footer-additionals-navi-bar ul {
+    list-style-type: none;
+
+}
+
+.footer-additionals-navi-bar-navi-points a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+
+
+/* .social-media {
+    display: flex;
+}
+
+.footer ul {
+    list-style-type: none;
+} */
+
+.social-media-navi-bar {
+    display: flex;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.social-media-navi-bar ul {
+    list-style-type: none;
+}
+
+/* .footer-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} */
