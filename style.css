@@ -217,7 +217,7 @@ details > summary {
 /* Here starts the Contact From styling */
 
 .contact {
-  width: 80%;
+  max-width: 90%;
   margin: 80px auto;
   padding: 0 0 30px;
 
