@@ -9,6 +9,8 @@
     display: flex;
     align-items: center;
     /* gap: 102px; */
+
+    padding-left: 235px;
 }
 
 .header-area img {
@@ -40,6 +42,168 @@
 
 
 
+/* HERE STARTS OF THE HIGHLIGTHS */
+
+.highlights {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+
+.highlights p {
+    text-align: center;
+} 
+
+
+.highlights-headline {
+    display: flex;
+
+    gap: 8px;
+}
+
+
+
+
+
+
+
+/* HERE STARTS THE PART OF THE MAIN-PAGE-SLIDER */
+
+
+
+
+
+.hollyday-contries {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100dvh;
+}
+
+
+.pictures-slider {
+    position: relative;
+
+    background-color: white;
+
+    width: 1200px;
+    height: 530px;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: flex-end;
+    
+    border-top-right-radius: 100px;
+
+    overflow: hidden;
+}
+
+
+.pictures-slider input {
+    z-index: 2;
+}
+
+
+.wrapper-pictures-slider {
+    z-index: 1;
+
+    position: absolute;
+
+    display: flex;
+
+    width: 400%;
+    height: 100%;
+
+    transition: all 1s ease-in-out;
+}
+
+
+
+.pictures-slider-element {
+
+    width: calc(100% / 4);
+    height: 100%;
+}
+
+
+
+
+.element-one {
+    background-color: white;
+}
+
+
+.element-two {
+    background-color: white;
+}
+
+
+.element-three {
+    background-color: white;
+}
+
+
+.element-four {
+    background-color: white;
+}
+
+
+
+
+.pictures-slider input[value="one"]:checked~.wrapper-pictures-slider {
+    transform: translateX(calc(100% / 2.666));
+}
+
+.pictures-slider input[value="two"]:checked~.wrapper-pictures-slider {
+    transform: translateX(calc(100% / 8));
+}
+
+.pictures-slider input[value="three"]:checked~.wrapper-pictures-slider {
+    transform: translateX(calc(-100% / 8));
+}
+
+.pictures-slider input[value="four"]:checked~.wrapper-pictures-slider {
+    transform: translateX(calc(-100% / 2.666));
+}
+
+
+
+
+
+
+.wrapper-pictures-slider img {
+    width: 1200px;
+    height: 530px;
+}
+
+
+/* .text-hollyday-pictures {
+    position: absolute;
+    z-index: 3;
+    background-color: black;
+    color: white;
+} */
+
+
+.wrapper-pictures-slider p {
+    z-index: 8;
+    background-color: black;
+}
+
+
+
+
+
 /* HERE STARTS THE PART OF THE FAQ */
 
 
@@ -48,6 +212,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    gap: 8px;
 }
 
 .faq-part {
@@ -55,13 +221,19 @@
 
     flex-direction: column;
     gap: 32px;
+    
+    padding: 0px 360px;
 }
 
 .faq-part details {
     background-color: #F1C953;
-    /* display: flex;
-    align-items: center;
-    flex-direction: row; */
+    /* display: flex; */
+    /* align-items: center; */
+    /* flex-direction: row; */
+
+    /* padding-left: 360px; */
+
+    border-radius: 12px;
 
 }
 
@@ -70,6 +242,7 @@
     border-radius: 5px;
 
     width: 100%;
+
     
 }
 
@@ -87,6 +260,9 @@ details > summary {
 
 .content-faq {
     background-color: #FFFFFF;
+
+    border: 10px solid #F1C953;
+    border-radius: 12px;
 }
 
 
@@ -122,6 +298,8 @@ details > summary {
 .additionals {
     display: flex;
     /* gap: 4px; */
+
+    padding-left: 235px;
 }
 
 
@@ -167,6 +345,7 @@ details > summary {
 
 .social-media-navi-bar {
     display: flex;
+
 }
 
 .social-media {
@@ -181,6 +360,8 @@ details > summary {
 
 .social-media-navi-bar ul {
     list-style-type: none;
+
+    padding-right: 235px;
 }
 
 /* .footer-area {
