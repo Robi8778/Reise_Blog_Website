@@ -8,6 +8,8 @@
   display: flex;
   align-items: center;
   /* gap: 102px; */
+
+    padding-left: 235px;
 }
 
 .header-area img {
@@ -33,33 +35,41 @@
   color: #f8f5eb;
 }
 
+
+
+
+
+
+
 /* HERE STARTS THE PART OF THE FAQ */
 
 .faq-headline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .faq-part {
   display: flex;
 
-  flex-direction: column;
-  gap: 32px;
+    flex-direction: column;
+    gap: 32px;
 }
 
 .faq-part details {
-  background-color: #f1c953;
-  /* display: flex;
+    background-color: #F1C953;
+    /* display: flex;
     align-items: center;
     flex-direction: row; */
+
 }
 
 .faq-part summary {
   height: 56px;
   border-radius: 5px;
 
-  width: 100%;
+    width: 100%;
+    
 }
 
 details > summary {
@@ -73,7 +83,7 @@ details > summary {
 }
 
 .content-faq {
-  background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 /* HERE STARTS THE PART OF THE FOOTER */
@@ -94,11 +104,13 @@ details > summary {
   justify-content: space-between;
   background-color: #4ea487;
   height: 120px;
+
+  padding: 0px 235px;
 }
 
 .additionals {
-  display: flex;
-  /* gap: 4px; */
+    display: flex;
+    /* gap: 4px; */
 }
 
 .footer-additionals-navi-bar {
@@ -139,7 +151,7 @@ details > summary {
 } */
 
 .social-media-navi-bar {
-  display: flex;
+    display: flex;
 }
 
 .social-media {
@@ -153,7 +165,7 @@ details > summary {
 }
 
 .social-media-navi-bar ul {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 /* .footer-area {
