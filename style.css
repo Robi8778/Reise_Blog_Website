@@ -104,6 +104,8 @@ details > summary {
   justify-content: space-between;
   background-color: #4ea487;
   height: 120px;
+
+  padding: 0px 235px;
 }
 
 .additionals {
