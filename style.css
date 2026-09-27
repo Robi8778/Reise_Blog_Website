@@ -203,7 +203,7 @@ details > summary {
 }
 
 .landing-section-area > p {
-  font-family: 'Palanquin', serif;
+  font-family: "Palanquin", serif;
   color: rgba(84, 55, 13, 1);
   font-size: 28px;
   font-weight: 500;
@@ -221,16 +221,15 @@ details > summary {
   margin: 80px auto;
   padding: 0 0 30px;
 
-  font-family: 'Palanquin', sans-serif;
+  font-family: "Palanquin", sans-serif;
   color: rgba(84, 55, 13, 1);
 }
 
 .contact h2 {
-  font-family: 'Arima', serif;
+  font-family: "Arima", serif;
   font-size: 52px;
   color: rgba(78, 164, 135, 1);
 }
-
 
 .intro {
   text-align: center;
@@ -328,7 +327,7 @@ button {
 
   background: white;
 
-  font-family: 'Arima', serif;
+  font-family: "Arima", serif;
   font-size: 24px;
   font-weight: bold;
   color: rgba(115, 115, 115, 1);
@@ -336,9 +335,146 @@ button {
 }
 
 .contact-heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+
+/* Styling Side 2 */
+
+.article {
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+
+  margin: 45px auto;
+
+  padding: 0 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Palanquin", serif;
+  font-weight: 400;
+}
+
+/* Linker Bereich */
+
+.article-content {
+  flex: 1;
+  max-width: 1270px;
+}
+
+.subtitle {
+  margin: 0 0 4px;
+
+  color: rgba(78, 164, 135, 1);
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+
+  color: #f1c953;
+
+  font-family: "Arima", serif;
+  font-size: 64px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.description {
+  max-width: 100%;
+
+  margin-bottom: 18px;
+
+  color: #63491f;
+
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+/* Informationen unter dem Text */
+
+.article-info {
+  
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-direction: row;
+
+  font-size: 11px;
+}
+
+.article-info span {
+  white-space: nowrap;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.article-info p {
+  color: rgba(84, 55, 13, 1);
+  font-family: "Palanquin", serif;
+}
+
+/* Autorenkarte */
+
+.author-card {
+  width: 270px;
+  height: 400px;
+
+  padding: 10px 12px 14px;
+
+  background-color: rgba(78, 164, 135, 0.2);
+
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.author-image {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 5px;
+}
+
+.author-card h2 {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-family: "Arima", serif;
+  font-size: 18px;
+}
+
+.author-role {
+  margin: 2px 0 15px;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 18px;
+  font-family: "Arima", serif;
+  font-weight: 400;
+}
+
+.author-text {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-align: left;
 }
