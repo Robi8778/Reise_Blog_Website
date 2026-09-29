@@ -456,7 +456,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 .page-two-follow-area {
   display: flex;
   justify-content: center;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .page-two-follow-part {
@@ -468,6 +468,43 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
+  align-items: flex-end;
+  padding-bottom: 88px;
+  gap: 80px;
+}
+
+.follow-text {
+  text-align: center;
+  padding: 0px 40px;
+
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 24px;
+}
+
+.share-button {
+  display: flex;
+  gap: 15px;
+  border-radius: 40px;
+  background-color: #4EA487;
+  padding: 5px 30px;
+  align-items: center;
+}
+
+.share-button p {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 24px;
+  color: #F1C953;
+}
+
+.share-button img {
+  height: 32px;
+  width: 32px;
 }
 
 

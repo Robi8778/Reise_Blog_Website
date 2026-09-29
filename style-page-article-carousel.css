@@ -43,6 +43,158 @@
 
 
 
+/* HERE STARTS THE LANDINGSECTION-AREA OF PAGE ONE */
+
+
+
+
+/* Styling Side 2 */
+
+.article {
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+
+  margin: 45px auto;
+
+  padding: 0 235px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Palanquin", serif;
+  font-weight: 400;
+}
+
+/* Linker Bereich */
+
+.article-content {
+  flex: 1;
+  max-width: 1270px;
+}
+
+.subtitle {
+  margin: 0 0 4px;
+
+  color: rgba(78, 164, 135, 1);
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+
+  color: #f1c953;
+
+  font-family: "Arima", serif;
+  font-size: 64px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.description {
+  max-width: 100%;
+
+  margin-bottom: 18px;
+
+  color: #63491f;
+
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+/* Informationen unter dem Text */
+
+.article-info {
+  
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-direction: row;
+
+  font-size: 11px;
+}
+
+.article-info span {
+  white-space: nowrap;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.article-info p {
+  color: rgba(84, 55, 13, 1);
+  font-family: "Palanquin", serif;
+}
+
+/* Autorenkarte */
+
+.author-card {
+  width: 270px;
+  height: 400px;
+
+  padding: 10px 12px 14px;
+
+  background-color: rgba(78, 164, 135, 0.2);
+
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.author-image {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 5px;
+}
+
+.author-card h2 {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-family: "Arima", serif;
+  font-size: 18px;
+}
+
+.author-role {
+  margin: 2px 0 15px;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 18px;
+  font-family: "Arima", serif;
+  font-weight: 400;
+}
+
+.author-text {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* HERE STARTS THE SLIDER AREA OF PAGE ONE */
@@ -128,6 +280,171 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 
+
+
+/* HERE STARTS THE TEXT-UNDER-SLIDER-AREA OF PAGE ONE */
+
+
+.page-one-text-area-under-slider {
+  display: flex;
+  padding: 88px 235px;
+}
+
+
+
+
+
+
+
+/* HERE STARTS THE BLOG-LIST OF PAGE ONE */
+
+
+
+.page-one-text-blog-list {
+  display: flex;
+  flex-direction: column;
+  padding: 88px 400px;
+  gap: 20px;
+}
+
+
+
+
+
+
+
+/* HERE STARTS THE TEXT-LIST-UNDER-THE-BLOG-LIST-AREA OF PAGE ONE */
+
+
+
+.page-one-text-list-area-under-blog-list {
+  padding: 88px 400px;
+}
+
+
+.light-bulb-box {
+  display: flex;
+  background-color: #4EA487;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+
+.under-list-textbox-page-one {
+  /* padding: 10px 10px; */
+}
+
+
+.under-list-page-one {
+  background-color: #4EA48733;
+  border-radius: 30px;
+}
+
+
+
+.under-list-page-one li {
+  padding: 5px 5px;
+}
+
+
+.under-list-page-one > .text-list-part-one {
+  /* padding-top: 10px; */
+}
+
+
+.text-list-part-one {
+  /* margin-top: 10px; */
+}
+
+.text-list-part-two {
+  /* margin-bottom: 10px; */
+}
+
+
+
+
+
+
+
+
+
+
+
+/* HERE STARTS THE BIG TEXT-BLOG OF PAGE ONE */
+
+
+
+
+.page-one-big-text-blog {
+  display: flex;
+  padding: 88px 235px;
+}
+
+
+
+
+
+
+
+
+
+
+/* HERE STARTS THE FOLLOW-AREA-PART */
+
+
+.page-two-follow-area {
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+.page-two-follow-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-under-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  padding-bottom: 88px;
+  gap: 80px;
+}
+
+.follow-text {
+  text-align: center;
+  padding: 0px 40px;
+
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 24px;
+}
+
+.share-button {
+  display: flex;
+  gap: 15px;
+  border-radius: 40px;
+  background-color: #4EA487;
+  padding: 5px 30px;
+  align-items: center;
+}
+
+.share-button p {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 24px;
+  color: #F1C953;
+}
+
+.share-button img {
+  height: 32px;
+  width: 32px;
+}
 
 
 
