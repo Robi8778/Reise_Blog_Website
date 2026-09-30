@@ -1,6 +1,3 @@
-
-
-
 /* HERE STARTS THE PART OF THE HEADER */
 
 .header-area {
@@ -40,54 +37,55 @@
 
 /* HERE STARTS THE PART OF THE FAQ */
 
-.faq-area {
-  /* width: 1440px; */
+.faq-heading {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
 }
 
-.faq-headline {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.faq-heading h2 {
+  font-family: "Arima", serif;
+  font-size: 52px;
+  color: rgba(78, 164, 135, 1);
 }
 
 .faq-part {
   display: flex;
-
   flex-direction: column;
-  gap: 32px;
+  align-items: center;
 }
-
-.faq-part details {
+details {
   background-color: #f1c953;
-  /* display: flex;
-    align-items: center;
-    flex-direction: row; */
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  height: 60px;
+  width: 1440px;
 }
 
-.faq-part summary {
-  height: 56px;
-  border-radius: 5px;
-
-  /* width: 100%; */
+details[open] {
+  background-color: #f1c953;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding: 0 15px;
+  height: 150px;
 }
 
-details > summary {
-  /* display: flex; */
-  /* justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse; */
+summary {
+  padding: 18px 0;
+  font-size: 24px;
+  font-weight: bold;
   cursor: pointer;
-
-  background-color: #f1c953;
+  padding-left: 15px;
 }
 
-.content-faq {
-  background-color: #ffffff;
+details p {
+  background-color: white;
+  padding: 8px;
+  margin: 0 0 15px;
+  border-radius: 5px;
 }
 
 /* HERE STARTS THE PART OF THE FOOTER */
@@ -205,8 +203,6 @@ details > summary {
   bottom: 20%;
   left: 30%;
   z-index: 4;
-
-   
 }
 
 .circle-two {
@@ -214,10 +210,7 @@ details > summary {
   bottom: 30%;
   left: 33.8%;
   z-index: 4;
-
-   
 }
-
 
 .animation {
   position: absolute;
@@ -229,19 +222,18 @@ details > summary {
 }
 
 @keyframes rotateText {
-    0% {
-        transform: rotate(0deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
 
-    50% {
-        transform: rotate(180deg);
-    }
+  50% {
+    transform: rotate(180deg);
+  }
 
-    100% {
-        transform: rotate(0deg);
-    }
+  100% {
+    transform: rotate(0deg);
+  }
 }
-
 
 .landing-section-area > h1 {
   font-family: "Arima", serif;
@@ -269,15 +261,13 @@ details > summary {
 /* Here starts the Contact From styling */
 
 .contact-area {
-
-  /* width: 1440px; */
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
 }
 
 .contact {
-  max-width: 90%;
+  width: 1440px;
   margin: 80px auto;
   padding: 0 0 30px;
 
@@ -298,11 +288,8 @@ details > summary {
   font-size: 24px;
 }
 
-
-
 .form-container {
   padding: 0 0;
- 
 }
 
 .input-row {
@@ -562,7 +549,6 @@ h1 {
 
   background-color: white;
 
-
   appearance: none;
   /* -webkit-appearance: none; */
 
@@ -645,8 +631,8 @@ h1 {
 }
 
 .highlights-headline img {
- height: 40px;
- width: 40px;
+  height: 40px;
+  width: 40px;
 }
 
 .highlights > p {
@@ -658,7 +644,6 @@ h1 {
   cursor: pointer;
 }
 
-
 .slider-text {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(5px);
@@ -667,7 +652,6 @@ h1 {
   top: 60px;
   left: 60px;
   padding: 20px;
-
 }
 
 .slider-a-element h2 {
@@ -677,41 +661,41 @@ h1 {
 }
 
 .slider-a-element p {
-   line-height: 1.1;
+  line-height: 1.1;
   font-size: 28px;
   color: white;
 }
 
 .highlight::after {
-     content: "";
-    position: absolute;
+  content: "";
+  position: absolute;
 
-    left: -5px;
-    bottom: -7px;
+  left: -5px;
+  bottom: -7px;
 
-    width: 110%;
-    height: 10px;
+  width: 110%;
+  height: 10px;
 
-    border-bottom: 2px solid #f4c542;
-    border-radius: 50%;
+  border-bottom: 2px solid #f4c542;
+  border-radius: 50%;
 
-    transform: rotate(-2deg) scaleX(0);
-    transform-origin: center;
+  transform: rotate(-2deg) scaleX(0);
+  transform-origin: center;
 
-    transition: transform 0.3s ease;
+  transition: transform 0.3s ease;
 }
 
 .highlight:hover::after {
-    transform: scaleX(1);transform: rotate(-2deg) scaleX(1);
+  transform: scaleX(1);
+  transform: rotate(-2deg) scaleX(1);
 }
 
 .highlight {
-    position: relative;
-    display: inline-block;
+  position: relative;
+  display: inline-block;
 
-    color: white;
-    font-size: 24px;
-    font-weight: bold;
-    text-decoration: none;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
 }
-
