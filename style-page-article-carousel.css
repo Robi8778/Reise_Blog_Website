@@ -51,6 +51,7 @@
 /* Styling Side 2 */
 
 .article {
+
   width: 100%;
   max-width: 1440px;
   height: 400px;
@@ -200,7 +201,25 @@ h1 {
 /* HERE STARTS THE SLIDER AREA OF PAGE ONE */
 
 
+
+.page-one-destinations-area h3 {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 32px;
+
+  text-align: center;
+
+  padding-top: 240px;
+  padding-bottom: 80px;
+}
+
+
+
 .page-one-destinations-area {
+  /* z-index: 1; */
+
     display: flex;
 
     height: 600px;
@@ -234,15 +253,18 @@ h1 {
     height: 300px;
 
     display: flex;
+    gap: 100px;
 
 }
 
 
 .slider-rotate-destination-pictures-element {
-    z-index: 1;
+    /* z-index: 1; */
 
     width: 100px;
     height: 80%;
+
+    border-radius: 16px;
 
 
     /* https://smoothshadows.com/#djEsMSw1LDAuMjUsMjAsNSwtOSwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
@@ -253,7 +275,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   -9px 5px 20px rgba(3, 7, 18, 0.25);
 
 
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform: perspective(250px) rotateY(10deg) translateX(-20px);
     transform-origin: 50% 50%;
 
     transition: all 250ms ease-in-out;
@@ -261,7 +283,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
 .slider-rotate-destination-pictures-element:hover {
-    z-index: 2;
+    /* z-index: 2; */
 
     transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 
@@ -276,6 +298,8 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 .slider-rotate-destinations-pictures img {
     width: 300px;
     height: 440px;
+
+    border-radius: 16px;
 }
 
 
@@ -287,7 +311,16 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 .page-one-text-area-under-slider {
   display: flex;
-  padding: 88px 235px;
+  padding: 400px 235px 88px 235px;
+}
+
+
+.page-one-text-area-under-slider p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
 }
 
 
@@ -308,9 +341,22 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
 
+.page-one-text-blog-list p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
+}
 
 
+.page-one-text-blog-list li {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
 
+  font-size: 24px;
+}
 
 
 /* HERE STARTS THE TEXT-LIST-UNDER-THE-BLOG-LIST-AREA OF PAGE ONE */
@@ -323,11 +369,32 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 .light-bulb-box {
+  z-index: 2;
+
+
   display: flex;
   background-color: #4EA487;
   width: fit-content;
   border-radius: 10px;
+
+  align-items: center;
+  padding: 15px;
+
+  transform-origin: 50% 50%;
+  transform: rotate(-13.67deg);
 }
+
+
+.light-bulb-box p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 28px;
+
+  color: #F1C953;
+}
+
 
 
 .under-list-textbox-page-one {
@@ -344,6 +411,21 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 .under-list-page-one li {
   padding: 5px 5px;
+
+
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
+}
+
+
+.under-list-page-one a {
+  color: #2b8d6e;
+  font-weight: bolder;
+
+  text-decoration: none;
 }
 
 
@@ -381,7 +463,13 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
 
+.page-one-big-text-blog p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
 
+  font-size: 24px;
+}
 
 
 
