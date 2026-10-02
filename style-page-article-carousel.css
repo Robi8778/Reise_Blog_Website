@@ -377,7 +377,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
 .slider-rotate-destination-pictures-element:hover {
-    /* z-index: 2; */
+    z-index: 2;
 
     transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 

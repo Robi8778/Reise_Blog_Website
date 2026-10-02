@@ -1,0 +1,578 @@
+
+
+
+
+
+
+
+
+/* HERE STARTS THE HEADER AREA OF PAGE TWO */
+
+
+
+.header-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4EA487;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  padding-left: 120px;
+  height: 128px;
+}
+
+.header-content img {
+  height: 72px;
+}
+
+.navi-bar {
+  display: flex;
+}
+
+.navi-bar ul {
+  display: flex;
+
+  list-style-type: none;
+  gap: 16px;
+}
+
+.navi-bar a {
+  text-decoration: none;
+  color: #f8f5eb;
+}
+
+
+
+
+
+
+
+/* HERE STARTS THE LANDINGSECTION-AREA OF PAGE TWO */
+
+
+
+
+.page-main-area {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+
+  /* background-color: #4EA487; */
+  width: 100%;
+  flex-direction: column;
+}
+
+
+
+
+
+/* Styling Side 2 */
+
+.article {
+
+  width: 100%;
+  max-width: 1440px;
+  height: 400px;
+
+  margin: 45px auto;
+
+  padding: 0 120px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-family: "Palanquin", serif;
+  font-weight: 400;
+}
+
+/* Linker Bereich */
+
+.article-content {
+  flex: 1;
+  max-width: 1270px;
+}
+
+.subtitle {
+  margin: 0 0 4px;
+
+  color: rgba(78, 164, 135, 1);
+
+  font-size: 40px;
+  font-weight: 600;
+}
+
+h1 {
+  margin: 0;
+
+  color: #f1c953;
+
+  font-family: "Arima", serif;
+  font-size: 64px;
+  line-height: 1.25;
+  font-weight: 700;
+}
+
+.description {
+  max-width: 100%;
+
+  margin-bottom: 18px;
+
+  color: #63491f;
+
+  font-size: 32px;
+  line-height: 1.3;
+}
+
+/* Informationen unter dem Text */
+
+.article-info {
+  
+
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  flex-direction: row;
+
+  font-size: 11px;
+}
+
+.article-info span {
+  white-space: nowrap;
+  display: flex;
+  gap: 3px;
+  align-items: center;
+}
+
+.article-info p {
+  color: rgba(84, 55, 13, 1);
+  font-family: "Palanquin", serif;
+}
+
+/* Autorenkarte */
+
+.author-card {
+  width: 270px;
+  height: 400px;
+
+  padding: 10px 12px 14px;
+
+  background-color: rgba(78, 164, 135, 0.2);
+
+  border-radius: 18px;
+
+  text-align: center;
+}
+
+.author-image {
+  width: 100px;
+  height: 100px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 5px;
+}
+
+.author-card h2 {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-family: "Arima", serif;
+  font-size: 18px;
+}
+
+.author-role {
+  margin: 2px 0 15px;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 18px;
+  font-family: "Arima", serif;
+  font-weight: 400;
+}
+
+.author-text {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 16px;
+  line-height: 1.25;
+
+  text-align: left;
+}
+
+
+
+
+
+/* HERE STARTS THE BIG TEXT-BLOG OF PAGE TWO */
+
+
+
+
+.page-big-text-blog {
+  display: flex;
+  padding: 88px 120px;
+
+
+  
+  /* width: 100%; */
+  /* max-width: 1440px; */
+  /* height: 400px; */
+
+  /* margin: 45px auto; */
+
+  /* padding: 0 120px; */
+
+  /* display: flex; */
+  justify-content: center;
+  /* align-items: center; */
+
+  /* width: 100%;
+  max-width: 1440px; */
+  /* height: 400px; */
+  /* justify-content: center;
+  align-items: center; */
+}
+
+
+.page-big-text-blog p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
+
+  display: flex;
+  /* width: 1200px; */
+
+  /* text-align: center; */
+
+  /* width: 100%; */
+  max-width: 1440px;
+  padding: 0px 120px;
+}
+
+
+
+
+/* HERE STARTS THE RAIN-BLOG */
+
+
+.rain-days-blog {
+    padding: 88px 400px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.rain-days-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 1000px;
+}
+
+.rain-days-content h3 {
+    text-align: center;
+}
+
+
+
+
+
+
+/* HERE STARTS THE ACTIVITIES-EXPENCES-BLOG */
+
+.activities-expences-blog {
+    padding: 88px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.activities-expences-content {
+    display: flex;
+    justify-content: center;
+    
+    width: 1100px;
+}
+
+
+.content-blog {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    width: 1440px;
+}
+
+.content-activities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 520px;
+
+    background-color: red;
+}
+
+
+.content-expences {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 520px;
+
+    background-color: blue;
+}
+
+
+
+
+
+
+.activities-upper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.activities-upper h3 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+.activities-picture {
+    display: flex;
+    justify-content: center;
+}
+
+
+.activities-picture img {
+    height: 480px;
+    border-radius: 52px;
+    width: 520px;
+}
+
+
+
+
+.expenses-upper {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.expenses-upper h3 {
+    text-align: center;
+    
+}
+
+
+
+.expences-picture {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.expences-picture img {
+    height: 480px;
+    border-radius: 52px;
+    width: 520px;
+}
+
+
+
+
+
+
+/* HERE STARTS THE FOLLOW-AREA-PART */
+
+
+.page-follow-area {
+  display: flex;
+  justify-content: center;
+  /* background-color: blue; */
+}
+
+.page-follow-part {
+  display: flex;
+  flex-direction: column;
+}
+
+.follow-under-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: flex-end;
+  padding-bottom: 88px;
+  gap: 80px;
+}
+
+.follow-text {
+  text-align: center;
+  padding: 0px 40px;
+
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 500;
+
+  font-size: 24px;
+}
+
+.share-button {
+  display: flex;
+  gap: 15px;
+  border-radius: 40px;
+  background-color: #4EA487;
+  padding: 5px 30px;
+  align-items: center;
+}
+
+.share-button p {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 24px;
+  color: #F1C953;
+}
+
+.share-button img {
+  height: 32px;
+  width: 32px;
+}
+
+
+
+
+
+
+
+
+
+/* HERE STARTS THE FOOTER AREA OF PAGE TWO */
+
+
+
+.footer-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #4EA487;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1440px;
+  padding: 0px 120px 0px 120px;
+  height: 128px;
+}
+
+.additionals {
+  display: flex;
+  align-items: center;
+}
+
+.additionals img {
+  width: 20px;
+}
+
+.additionals-navi-bar {
+  display: flex;
+  align-items: center;
+}
+
+.additionals-navi-bar ul {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+  gap: 72px;
+  padding: 0px;
+}
+
+.additionals-navi-bar li {
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.additionals-navi-bar a {
+  text-decoration: none;
+  color: #f8f5eb;
+}
+
+.words-travel-blog-2026 {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 18px;
+}
+
+.words-cookies-imprint {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+.social-media {
+  display: flex;
+  align-items: center;
+}
+
+.social-media img {
+  height: 32px;
+}
+
+.social-media-navi-bar {
+  display: flex;
+  align-items: center;
+}
+
+.social-media-navi-bar ul {
+  display: flex;
+  align-items: center;
+
+  list-style-type: none;
+  gap: 10px;
+  padding: 0px;
+}
+
+.social-media-navi-bar li {
+  display: flex;
+  align-items: center;
+}
+
+
+
