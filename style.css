@@ -272,19 +272,20 @@ details p {
 
   z-index: 10;
 
-  animation: yellowDisappear 1.2s 1.8s forwards;
+  animation: yellowDisappear 1.3s ease-out 1.6s forwards;
 }
 
 @keyframes yellowDisappear {
 
     from {
         transform: translateX(0);
+        opacity: 1;
       
     }
 
     to {
         transform: translateX(-100%);
-      
+        opacity: 1;
     }
 
 }
@@ -310,7 +311,7 @@ details p {
 @keyframes yellowFromRight {
   from {
     transform: translateX(100%);
-    opacity: 0;
+    opacity: 0.9;
   }
 
   to {
