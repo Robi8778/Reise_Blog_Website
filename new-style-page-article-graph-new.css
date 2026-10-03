@@ -2,6 +2,16 @@
 
 
 
+h3 {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 32px;
+  color: #54370D;
+}
+
+
 
 
 
@@ -26,6 +36,8 @@
   width: 1440px;
   padding-left: 120px;
   height: 128px;
+
+  gap: 70px;
 }
 
 .header-content img {
@@ -40,17 +52,54 @@
   display: flex;
 
   list-style-type: none;
-  gap: 16px;
+  gap: 50px;
 }
 
 .navi-bar a {
   text-decoration: none;
   color: #f8f5eb;
+
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 24px;
 }
 
 
 
 
+
+/* Hover Effekte Header */
+
+.highlight {
+  position: relative;
+  display: inline-block;
+
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navi-bar li {
+    position: relative;
+}
+
+.image-header {
+    position: absolute;
+    left: 2.5px;
+    bottom: 2px;
+
+    width: 100%;
+    height: auto;
+
+    opacity: 0;
+}
+
+.navi-bar li:hover .image-header {
+    opacity: 1;
+}
 
 
 
@@ -81,7 +130,7 @@
   max-width: 1440px;
   height: 400px;
 
-  margin: 45px auto;
+  margin: 88px auto 22px;
 
   padding: 0 120px;
 
@@ -222,7 +271,7 @@ h1 {
 
 .page-big-text-blog {
   display: flex;
-  padding: 88px 120px;
+  padding: 22px 120px;
 
 
   
@@ -252,6 +301,7 @@ h1 {
   font-weight: 400;
 
   font-size: 24px;
+  color: #3D3D3D;
 
   display: flex;
   /* width: 1200px; */
@@ -270,7 +320,7 @@ h1 {
 
 
 .rain-days-blog {
-    padding: 88px 400px;
+    padding: 66px 400px;
     display: flex;
     justify-content: center;
 }
@@ -281,7 +331,9 @@ h1 {
     justify-content: center;
     flex-direction: column;
     
-    width: 1000px;
+    width: 640px;
+
+    gap: 44px;
 }
 
 .rain-days-content h3 {
@@ -292,11 +344,29 @@ h1 {
 
 
 
+.rain-days-content img {
+  max-width: 100%;
+
+  height: auto;
+
+  border-radius: 52px;
+
+
+  /* https://smoothshadows.com/#djEsMSw1LDAuMjUsMTEsNCwtMiwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
+  -0px 1px 2px rgba(3, 7, 18, 0.10),
+  -1px 1px 4px rgba(3, 7, 18, 0.15),
+  -1px 3px 7px rgba(3, 7, 18, 0.20),
+  -2px 4px 11px rgba(3, 7, 18, 0.25);
+}
+
+
+
 
 /* HERE STARTS THE ACTIVITIES-EXPENCES-BLOG */
 
 .activities-expences-blog {
-    padding: 88px 120px;
+    padding: 66px 120px;
     display: flex;
     justify-content: center;
 }
@@ -306,7 +376,7 @@ h1 {
     display: flex;
     justify-content: center;
     
-    width: 1100px;
+    width: 1200px;
 }
 
 
@@ -324,19 +394,23 @@ h1 {
     flex-direction: column;
     
     width: 520px;
+    
+    gap: 20px;
 
-    background-color: red;
+    
 }
 
 
 .content-expences {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     
     width: 520px;
 
-    background-color: blue;
+    gap: 20px;
+
+    
 }
 
 
@@ -356,6 +430,18 @@ h1 {
 }
 
 
+
+.activities-text p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
+
+  color: #3D3D3D;
+}
+
+
 .activities-picture {
     display: flex;
     justify-content: center;
@@ -366,6 +452,16 @@ h1 {
     height: 480px;
     border-radius: 52px;
     width: 520px;
+
+
+    
+    /* https://smoothshadows.com/#djEsMSw1LDAuMjUsMTEsNCwtMiwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
+  -0px 1px 2px rgba(3, 7, 18, 0.10),
+  -1px 1px 4px rgba(3, 7, 18, 0.15),
+  -1px 3px 7px rgba(3, 7, 18, 0.20),
+  -2px 4px 11px rgba(3, 7, 18, 0.25);
+
 }
 
 
@@ -379,7 +475,19 @@ h1 {
 
 .expenses-upper h3 {
     text-align: center;
+    padding-bottom: 10px;
     
+}
+
+
+.expences-text p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
+
+  color: #3D3D3D;
 }
 
 
@@ -395,6 +503,16 @@ h1 {
     height: 480px;
     border-radius: 52px;
     width: 520px;
+
+
+    
+    /* https://smoothshadows.com/#djEsMSw1LDAuMjUsMTEsNCwtMiwjMDMwNzEyLCNmM2Y0ZjYsI2ZmZmZmZiwy */
+box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
+  -0px 1px 2px rgba(3, 7, 18, 0.10),
+  -1px 1px 4px rgba(3, 7, 18, 0.15),
+  -1px 3px 7px rgba(3, 7, 18, 0.20),
+  -2px 4px 11px rgba(3, 7, 18, 0.25);
+
 }
 
 
@@ -414,6 +532,7 @@ h1 {
 .page-follow-part {
   display: flex;
   flex-direction: column;
+  padding-top: 66px;
 }
 
 .follow-under-box {
@@ -434,6 +553,8 @@ h1 {
   font-weight: 500;
 
   font-size: 24px;
+
+  color: #54370D;
 }
 
 .share-button {
