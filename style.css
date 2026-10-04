@@ -113,24 +113,7 @@ footer ul {
 
 /* End: Footer */
 
-@media screen and (min-width: 1440px) {
-  header {
-    padding: 16px max(120px, calc(50% - 720px));
-  }
-  footer {
-    padding: 60px max(120px, calc(50% - 720px));
-  }
-}
 
-@media screen and (max-width: 768px) {
-  header {
-    padding: 0px 20px;
-  }
-
-  footer {
-    padding: 0px 20px;
-  }
-}
 
 .navi-bar {
   display: flex;
@@ -855,4 +838,111 @@ h1 {
   color: white;
 }
 
-/* Animation beim Öffnen der Website */
+/* Responsive Design */
+
+@media screen and (min-width: 1440px) {
+  header {
+    padding: 16px max(120px, calc(50% - 720px));
+  }
+  footer {
+    padding: 60px max(120px, calc(50% - 720px));
+  }
+}
+
+@media screen and (max-width: 1080px) {
+
+
+  .yellow-start {
+  position: absolute;
+  width: 100%;
+  height: 93.7%;
+  background: #f1c953;
+
+  z-index: 10;
+
+  animation: unset;
+}
+
+
+.background {
+  display: none;
+}
+
+.circle-group {
+  display: none;
+}
+
+.yellow-image {
+  display: none;
+}
+
+.landing-text {
+  display: none;
+}
+
+.contact {
+  width: unset;
+  margin: 80px auto;
+  padding: 0 0 30px;
+
+  font-family: "Palanquin", sans-serif;
+  color: rgba(84, 55, 13, 1);
+}
+
+.input-row {
+  display: unset;
+}
+
+details {
+  background-color: #f1c953;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  padding-bottom: 15px;
+  height: 60px;
+  width: unset;
+  max-width: 100%;
+}
+
+.landing-section-area {
+  position: relative;
+  width: unset;
+  height: 550px;
+
+  margin: 0 auto;
+
+  overflow: hidden;
+}
+
+.slider-a {
+  position: relative;
+
+  width: 800px;
+  height: 533px;
+
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+
+  overflow: hidden;
+}
+
+  header {
+    padding: 0px 20px;
+  }
+
+  footer {
+    padding: 0px 20px;
+  }
+
+  
+}
+
+@media screen and (max-width: 768px) {
+
+}
+
+
+
+@media screen and (max-width: 400px) {
+
+}
