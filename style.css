@@ -688,6 +688,78 @@ button {
   color: white;
 }
 
+.mobile-menu {
+    display: none;
+}
+
+
+.mobile-menu {
+    display: none;
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .mobile-menu {
+        position: fixed;
+
+        left: 50%;
+        bottom: 15px;
+
+        transform: translateX(-50%);
+
+        width: calc(100% - 50px);
+        max-width: 360px;
+
+        height: 58px;
+
+        background-color: #f1c953;
+
+        border-radius: 0 0 15px 15px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-around;
+
+        z-index: 9999;
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .mobile-menu-item {
+        width: 25%;
+
+        height: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+    }
+
+
+    .mobile-menu-item img {
+        width: 25px;
+        height: 25px;
+
+        object-fit: contain;
+    }
+
+
+    .mobile-menu-item:hover {
+        transform: translateY(-3px);
+    }
+
+
+    .mobile-menu-item {
+        transition: transform 0.2s ease;
+    }
+}
+
 /* Responsive Design */
 
 @media screen and (min-width: 1440px) {
@@ -822,6 +894,323 @@ button {
    height: 70%;
   }
 }
+
+
+@media screen and (max-width: 600px) {
+
+  
+
+    .landing-section-area {
+        position: relative;
+        width: 100%;
+        height: 300px;
+        margin: 0;
+        overflow: hidden;
+        background: #f1c953;
+    }
+
+
+    /*
+       GELBE STARTFLÄCHE
+        */
+
+    .yellow-start {
+        position: absolute;
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        background: #f1c953;
+
+        z-index: 10;
+
+        animation: yellowStartMobile 1.0s ease-in-out 1.0s forwards;
+    }
+
+    @keyframes yellowStartMobile {
+
+        from {
+            transform: translateX(0);
+        }
+
+        to {
+            transform: translateX(-100%);
+        }
+    }
+
+
+   
+
+    .background {
+        display: block;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+
+        z-index: 1;
+
+        opacity: 0;
+
+        animation: backgroundMobile 1.2s ease-out 1.7s forwards;
+    }
+
+    @keyframes backgroundMobile {
+
+        from {
+            transform: translateX(100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    /* 
+      YELLOW-IMAGE
+       
+        */
+
+    .yellow-image {
+        display: block;
+
+        position: absolute;
+
+        top: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 3;
+
+        opacity: 0;
+
+        animation: yellowImageMobile 1.0s ease-out 2.0s forwards;
+    }
+
+    @keyframes yellowImageMobile {
+
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+
+    /* 
+       TEXT
+        */
+
+    .landing-text {
+        display: block;
+
+        position: absolute;
+
+        top: 70px;
+        left: 25px;
+
+        z-index: 11;
+
+        opacity: 0;
+
+        animation:
+            textInMobile 0.8s ease-out 1.4s forwards,
+            textOutMobile 0.6s ease-in 3.2s forwards;
+    }
+
+    .landing-text h1 {
+        position: static;
+
+        margin: 0 0 8px 0;
+
+        font-family: "Arima", serif;
+
+        font-size: 26px;
+
+        line-height: 1;
+
+        color: rgba(84, 55, 13, 1);
+    }
+
+    .landing-text p {
+        position: static;
+
+        margin: 0;
+
+        font-family: "Palanquin", serif;
+
+        font-size: 11px;
+
+        line-height: 1.2;
+
+        color: rgba(84, 55, 13, 1);
+    }
+
+
+    @keyframes textInMobile {
+
+        from {
+            transform: translateX(-40px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes textOutMobile {
+
+        from {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+        to {
+            transform: translateX(-40px);
+            opacity: 0;
+        }
+    }
+
+
+    /* 
+       KREIS 
+        */
+
+    .circle-group {
+        display: block;
+
+        position: absolute;
+
+        inset: 0;
+
+        width: 100%;
+        height: 100%;
+
+        z-index: 12;
+
+        opacity: 0;
+
+        animation: circlesMobile 0.8s ease-out 3.3s forwards;
+    }
+
+    @keyframes circlesMobile {
+
+        from {
+            transform: translateY(40px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+
+    /* 
+       KREISE POSITION
+        */
+
+    .circle-one {
+        position: absolute;
+
+        width: 75px;
+        height: 75px;
+
+        left: 56%;
+        bottom: 28%;
+
+        z-index: 4;
+    }
+
+    .circle-two {
+        position: absolute;
+
+        width: 48px;
+        height: 48px;
+
+        left: 59%;
+        bottom: 31%;
+
+        z-index: 5;
+    }
+
+    .animation {
+        position: absolute;
+
+        width: 80px;
+        height: 80px;
+
+        left: 54%;
+        bottom: 25%;
+
+        z-index: 6;
+
+        animation: rotateTextMobile 8s linear infinite;
+    }
+
+    @keyframes rotateTextMobile {
+
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+
+    /*
+       SLIDER
+        */
+
+    .slider-a {
+        width: 390px;
+        height: 300px;
+
+        border-top-right-radius: 150px;
+    }
+
+    .slider-text {
+        width: 300px;
+        height: 170px;
+
+        padding: 10px;
+
+        top: 40px;
+        left: 20px;
+    }
+
+
+    /*
+       FOOTER
+    */
+
+    .social-media img {
+        width: 25px;
+        height: 25px;
+    }
+}
+
 
 @media screen and (max-width: 600px) {
   .slider-a {
