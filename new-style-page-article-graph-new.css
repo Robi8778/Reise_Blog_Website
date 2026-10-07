@@ -1156,7 +1156,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 }
 
 
-@media screen and (min-width: 550px) and (max-width: 941.99px) {
+@media screen and (min-width: 800px) and (max-width: 941.99px) {
 
   .article {
     padding: 22px 15px;
@@ -1180,7 +1180,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 
 
-@media screen and (min-width: 501px) and (max-width: 892px) {
+@media screen and (min-width: 804px) and (max-width: 892px) {
 
   .subtitle {
     font-size: 20px;
@@ -1310,6 +1310,435 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   }
   
 }
+
+
+/* ACHTUNG NOCH DEN ÜBERGANG NACH UNTEN BERÜCKSICHTIGEN */
+
+@media screen and (min-width: 299px) and (max-width: 803.99px) {
+
+  .subtitle {
+    font-size: 20px;
+    
+    
+  }
+
+  h1 {
+    font-size: 35px;
+    
+  }
+
+  .description {
+    font-size: 16.5px;
+    
+  }
+
+
+  .author-card {
+    height: 248.85px;
+    
+  }
+
+
+
+  .author-image {
+  width: 70px;
+  height: 70px;
+
+  object-fit: cover;
+
+  border-radius: 50%;
+
+  margin-bottom: 5px;
+}
+
+.author-card h2 {
+  margin: 0;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-family: "Arima", serif;
+  font-size: 16px;
+}
+
+.author-role {
+  margin: 2px 0 15px;
+
+  color: rgba(84, 55, 13, 1);
+
+  font-size: 16px;
+  font-family: "Arima", serif;
+  font-weight: 400;
+}
+
+
+
+  .author-text {
+    font-size: 11px;
+    
+  }
+
+
+
+  .page-big-text-blog p {
+    font-size: 16px;
+
+  }
+
+
+  .activities-text p {
+    font-size: 16px;
+  }
+
+  .expences-text p {
+    font-size: 16px;
+  }
+
+
+
+  .content-activities {
+    gap: 50px;
+  }
+
+
+
+
+
+  h3 {
+    font-size: 20px;
+  }
+
+
+
+
+  .follow-text {
+    font-size: 18px;
+  }
+
+
+
+
+  .follow-under-box {
+    gap: 19px;
+  }
+
+
+
+
+
+  .content-activities {
+    width: 350px;
+  }
+
+  .activities-picture img {
+    max-width: 100%;
+    height: 280px;
+  }
+
+  .content-expences {
+    width: 350px;
+  }
+
+  .expences-picture img {
+    max-width: 100%;
+    height: 280px;
+  }
+  
+}
+
+
+@media screen and (min-width: 301px) and (max-width: 799.99px) {
+
+  .article {
+    padding: 22px 15px;
+
+    margin: 44px auto 11px;
+
+    margin-bottom: 80px;
+  }
+
+  .page-big-text-blog p {
+    padding: 11px 15px;
+  }
+
+  .rain-days-blog {
+    padding: 33px 220px;
+  }
+
+  .content-blog {
+    padding: 0px 15px;
+  }
+  
+}
+
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+
+  .article {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    
+  }
+
+
+  
+
+
+
+  .author-card {
+  max-width: 528px;
+  width: 100%;
+  height: auto;
+  
+  
+}
+
+
+
+
+.rain-days-content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 44px;
+}
+
+
+
+  
+
+  .content-blog {
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 32px;
+  }
+  
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+
+  .article {
+    gap: 15px;
+
+    padding: 0px 120px;
+    /* ACHTUNG ACHTUNG ACHTUNG ACHTUNG ACHTUNG DAS PADDING OBNEN DRÜBER HABE ICH GERADE GEMACHT ABER ES MUSS AUCH AUF OBERE SECTION ÜBERTRAGEN WERDEN */
+  }
+
+  .article-content {
+    padding: 0px 120px;
+
+    margin-top: 15px;
+  }
+
+  
+  
+
+  .page-big-text-blog p {
+    padding: 32px 120px;
+  }
+
+
+
+
+
+  .rain-days-blog {
+    padding: 0px 120px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.activities-expences-blog {
+  padding: 0px;
+}
+
+
+
+
+  .content-blog {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    width: 1440px;
+
+
+
+    padding: 0px 120px;
+}
+
+.content-activities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    gap: 20px;
+
+    
+}
+
+
+.content-expences {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 20px;
+
+    
+}
+
+
+  .activities-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  .expences-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SCHRIFTGRÖßE */
+
+@media screen and (min-width: 12px) and (max-width: 768px) {
+
+  .article-content {
+    margin-top: 60px;
+  }
+
+  .subtitle {
+  /* margin: 0 0 4px; */
+
+  font-size: 20px;  
+}
+
+h1 {
+  /* margin: 0; */
+
+  font-size: 40px;
+}
+
+.description {
+  /* max-width: 100%;
+  margin-bottom: 18px; */
+
+  font-size: 18px;
+}
+
+/* Informationen unter dem Text */
+
+
+
+/* Autorenkarte */
+
+
+
+.author-card h2 {
+  /* margin: 0; */
+
+  font-size: 16px;
+}
+
+.author-role {
+  /* margin: 2px 0 15px; */
+
+  font-size: 16px;
+}
+
+.author-text {
+  /* margin: 0; */
+
+  font-size: 16px;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 @media screen and (min-width: 1440px) {
