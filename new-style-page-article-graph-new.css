@@ -1333,6 +1333,14 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   }
 
 
+/* ACHTUNG EXTRA EINGEFÜGT ACHTUNG */
+
+.card-section {
+  padding: 0px 120px;
+}
+
+/* ACHTUNG EXTRA EINGEFÜGT ACHTUNG */
+
   .author-card {
     height: 248.85px;
     
@@ -1529,7 +1537,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   .article {
     gap: 15px;
 
-    padding: 0px 120px;
+    /* padding: 0px 120px; */
     /* ACHTUNG ACHTUNG ACHTUNG ACHTUNG ACHTUNG DAS PADDING OBNEN DRÜBER HABE ICH GERADE GEMACHT ABER ES MUSS AUCH AUF OBERE SECTION ÜBERTRAGEN WERDEN */
   }
 
