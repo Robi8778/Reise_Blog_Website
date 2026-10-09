@@ -12,6 +12,11 @@ h3 {
 }
 
 
+.mobile-menu {
+    display: none;
+}
+
+
 
 
 
@@ -786,6 +791,14 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 @media screen and (min-width: 1165px) and (max-width: 1205px) {
 
+  .header-content {
+    padding-left: 100px;
+  }
+
+  .footer-content {
+    padding: 0px 100px 0px 100px;
+  }
+
   .article{
     padding: 0px 100px;
   }
@@ -808,6 +821,14 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 @media screen and (min-width: 1125px) and (max-width: 1164px) {
 
+  .header-content {
+    padding-left: 80px;
+  }
+
+  .footer-content {
+    padding: 0px 80px 0px 80px;
+  }
+
   .article {
     padding: 0px 80px;
   }
@@ -827,6 +848,14 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 }
 
 @media screen and (min-width: 994px) and (max-width: 1124px) {
+
+  .header-content {
+    padding-left: 50px;
+  }
+
+  .footer-content {
+    padding: 0px 50px 0px 50px;
+  }
 
   .article {
     padding: 22px 50px;
@@ -1034,6 +1063,14 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 @media screen and (min-width: 942px) and (max-width: 993.99px) {
 
+  .header-content {
+    padding-left: 35px;
+  }
+
+  .footer-content {
+    padding: 0px 35px 0px 35px;
+  }
+
   .article {
     padding: 22px 35px;
 
@@ -1158,6 +1195,14 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 @media screen and (min-width: 800px) and (max-width: 941.99px) {
 
+  .header-content {
+    padding-left: 15px;
+  }
+
+  .footer-content {
+    padding: 0px 15px 0px 15px;
+  }
+
   .article {
     padding: 22px 15px;
 
@@ -1181,6 +1226,10 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 
 @media screen and (min-width: 804px) and (max-width: 892px) {
+
+  .additionals-navi-bar ul {
+    gap: 36px;
+  }
 
   .subtitle {
     font-size: 20px;
@@ -1314,7 +1363,11 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 /* ACHTUNG NOCH DEN ÜBERGANG NACH UNTEN BERÜCKSICHTIGEN */
 
-@media screen and (min-width: 299px) and (max-width: 803.99px) {
+@media screen and (min-width: 769px) and (max-width: 803.99px) {
+
+  .additionals-navi-bar ul {
+    gap: 20px;
+  }
 
   .subtitle {
     font-size: 20px;
@@ -1335,9 +1388,9 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 /* ACHTUNG EXTRA EINGEFÜGT ACHTUNG */
 
-.card-section {
+/* .card-section {
   padding: 0px 120px;
-}
+} */
 
 /* ACHTUNG EXTRA EINGEFÜGT ACHTUNG */
 
@@ -1454,7 +1507,15 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 }
 
 
-@media screen and (min-width: 301px) and (max-width: 799.99px) {
+@media screen and (min-width: 769px) and (max-width: 799.99px) {
+
+  .header-content {
+    padding-left: 15px;
+  }
+
+  .footer-content {
+    padding: 0px 15px 0px 15px;
+  }
 
   .article {
     padding: 22px 15px;
@@ -1481,11 +1542,152 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
 
+  .header-content {
+    padding-left: 0px;
+  }
+
+
+  .navi-bar {
+    display: none;
+  }
+
+  .header-content {
+    justify-content: center;
+  }
+
+  /* .header-content {
+    padding-left: 15px;
+  } */
+
+  .footer-content {
+    padding: 0px 15px 0px 15px;
+  }
+
+  .words-travel-blog-2026 {
+    font-size: 16px;
+  }
+
+
+  .additionals-navi-bar ul {
+    gap: 0px;
+
+    align-items: start;
+
+    /* text-align: left; */
+  }
+
+
+
+
+
+  .additionals-navi-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+
+
+  .additionals-navi-bar-class-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    padding: unset;
+    padding-left: 10px;
+
+
+
+
+
+
+    /* display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0px; */
+  }
+
+
+
+
+  
+
+  .copyright {
+    order: 3;
+  }
+
+  .imprint {
+    order: 1;
+  }
+
+  .cookie {
+    order: 2;
+  }
+
+
+  
+
+  .social-media img {
+    height: 22px;
+  }
+
+
+
+
+
+
+
+
+/* AREA */
+
+
+/* .social-media {
+  display: flex;
+  align-items: flex-end;
+} */
+
+
+
+/* .social-media-navi-bar {
+  display: flex;
+  align-items: flex-end;
+} */
+
+.social-media-navi-bar ul {
+  display: flex;
+  align-items: flex-end;
+  padding-top: 60px;
+
+  
+}
+
+/* .social-media-navi-bar li {
+  display: flex;
+  align-items: flex-end;
+} */
+
+
+
+
+
+
+/* AREA */
+
+
+
+  
+
+
+
   .article {
     flex-direction: column;
 
     justify-content: center;
     align-items: center;
+
+    padding: 0px;
 
     
   }
@@ -1501,6 +1703,13 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   height: auto;
   
   
+}
+
+
+
+
+.article-info {
+  flex-wrap: wrap;
 }
 
 
@@ -1528,11 +1737,316 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
     gap: 32px;
   }
+
+
+
+
+/* AB HIER WURDE HEUTE ABGEÄNDERT */
+
+  /* .page-follow-part {
+    gap: 40px;
+  } */
+
+
+
+  /* .vector-area-class {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: red;
+  }
+
+
+  .share-button-area-class {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100px;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: blue;
+
+    padding-top: 80px;
+  }
+
+
+
+
+
+
+
+
+  .follow-under-box {
+    display: flex;
+
+    padding-left: 20px;
+
+    gap: 60px;
+
+    height: fit-content;
+    
+    
+    
+    
+  } */
+
+/* BIS HIER WURDE HEUTE GEÄNDERT */
+
+
+
+
+  /* .vetor-class {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  } */
+
+
+
+  /* .share-button-class {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+  } */
+
+
+
+
+
   
 }
 
 
-@media screen and (min-width: 500px) and (max-width: 768px) {
+/* HERE IS THE FOLLOW AREA */
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+  .vector-area-class {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: red;
+  }
+
+
+  .share-button-area-class {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100px;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: blue;
+
+    padding-top: 80px;
+  }
+
+
+
+
+
+
+
+
+  .follow-under-box {
+    display: flex;
+
+    padding-left: 20px;
+
+    gap: 60px;
+
+    height: fit-content;
+    
+    
+    
+    
+  }
+  
+}
+
+
+@media screen and (min-width: 299px) and (max-width: 480.99px) {
+
+  .vector-area-class {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100px;
+
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    background-color: red;
+  }
+
+
+  .share-button-area-class {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    width: 100px;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    background-color: blue;
+
+    padding-top: 80px;
+  }
+
+
+  .share-button img {
+    height: 20px;
+    width: 20px;
+  }
+
+
+
+
+  .vetor-class img {
+    height: 42px;
+  }
+
+
+
+
+
+
+
+
+  .follow-under-box {
+    display: flex;
+
+    padding-left: 40px;
+
+    gap: 0px;
+
+    height: fit-content;
+    
+    
+    
+    
+  }
+  
+}
+
+/* HERE ENDS THE FOLLOW AREA */
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .mobile-menu {
+        position: fixed;
+
+        left: 50%;
+        /* bottom: 15px; */
+        bottom: 1px;
+
+        transform: translateX(-50%);
+
+        /* width: calc(100% - 50px); */
+
+        width: 100%;
+        max-width: 768px;
+
+        height: 58px;
+
+        background-color: #f1c953;
+
+        border-radius: 0 0 15px 15px;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: space-around;
+
+        z-index: 9999;
+
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+
+
+    .mobile-menu-item {
+        width: 25%;
+
+        height: 100%;
+
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+    }
+
+
+    .mobile-menu-item img {
+        width: 25px;
+        height: 25px;
+
+        object-fit: contain;
+    }
+
+
+    .mobile-menu-item:hover {
+        transform: translateY(-3px);
+    }
+
+
+    .mobile-menu-item {
+        transition: transform 0.2s ease;
+    }
+
+
+
+
+
+
+
+
+    .place-for-mobile {
+      display: flex;
+      width: 100%;
+    }
+
+    .place-for-mobile-menu {
+      display: flex;
+      height: 58px;
+      width: 100%;
+
+      background-color: #F1C953;
+    }
+  
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
 
   .article {
     gap: 15px;
@@ -1542,13 +2056,44 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   }
 
   .article-content {
-    padding: 0px 120px;
+    padding: 0px 0px;
 
     margin-top: 15px;
   }
 
+  .subtitle {
+    padding: 0px 120px;
+  }
+
+  h1 {
+    padding: 0px 120px;
+  }
+
+  .description {
+    padding: 0px 120px;
+  }
+
+  .article-info {
+    padding: 0px 120px;
+  }
+
+
+
+  .card-section {
+    padding: 0px 120px;
+  }
+
+
+
+
+
+  .upper-big-text-blog {
+    padding-top: 100px;
+  }
+
   
   
+
 
   .page-big-text-blog p {
     padding: 32px 120px;
@@ -1632,6 +2177,575 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 
 
+@media screen and (min-width: 650px) and (max-width: 699.99px) {
+
+  .article {
+    gap: 15px;
+
+    /* padding: 0px 120px; */
+    /* ACHTUNG ACHTUNG ACHTUNG ACHTUNG ACHTUNG DAS PADDING OBNEN DRÜBER HABE ICH GERADE GEMACHT ABER ES MUSS AUCH AUF OBERE SECTION ÜBERTRAGEN WERDEN */
+  }
+
+  .article-content {
+    padding: 0px 0px;
+
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    padding: 0px 100px;
+  }
+
+  h1 {
+    padding: 0px 100px;
+  }
+
+  .description {
+    padding: 0px 100px;
+  }
+
+  .article-info {
+    padding: 0px 100px;
+  }
+
+
+
+  .card-section {
+    padding: 0px 100px;
+  }
+
+
+
+
+
+  .upper-big-text-blog {
+    padding-top: 100px;
+  }
+
+  
+  
+
+  .page-big-text-blog p {
+    padding: 32px 100px;
+  }
+
+
+
+
+
+  .rain-days-blog {
+    padding: 0px 100px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.activities-expences-blog {
+  padding: 0px;
+}
+
+
+
+
+  .content-blog {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    width: 1440px;
+
+
+
+    padding: 0px 100px;
+}
+
+.content-activities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    gap: 20px;
+
+    
+}
+
+
+.content-expences {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 20px;
+
+    
+}
+
+
+  .activities-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  .expences-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+
+
+
+/* PADDING OF UPPER-TEXT-BLOG */
+
+@media screen and (min-width: 603px) and (max-width: 649.99px) {
+
+  .upper-big-text-blog {
+    padding-top: 80px;
+  }
+  
+}
+
+@media screen and (min-width: 554px) and (max-width: 602px) {
+
+  .upper-big-text-blog {
+    padding-top: 100px;
+  }
+  
+}
+
+
+/* PADDING OF THE REST */
+
+@media screen and (min-width: 554px) and (max-width: 649.99px) {
+
+  .article {
+    gap: 15px;
+
+    /* padding: 0px 120px; */
+    /* ACHTUNG ACHTUNG ACHTUNG ACHTUNG ACHTUNG DAS PADDING OBNEN DRÜBER HABE ICH GERADE GEMACHT ABER ES MUSS AUCH AUF OBERE SECTION ÜBERTRAGEN WERDEN */
+  }
+
+  .article-content {
+    padding: 0px 0px;
+
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    padding: 0px 60px;
+  }
+
+  h1 {
+    padding: 0px 60px;
+  }
+
+  .description {
+    padding: 0px 60px;
+  }
+
+  .article-info {
+    padding: 0px 60px;
+  }
+
+
+
+  .card-section {
+    padding: 0px 60px;
+  }
+
+
+
+
+
+  /* .upper-big-text-blog {
+    padding-top: 80px;
+  } */
+
+  
+  
+
+  .page-big-text-blog p {
+    padding: 32px 60px;
+  }
+
+
+
+
+
+  .rain-days-blog {
+    padding: 0px 60px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.activities-expences-blog {
+  padding: 0px;
+}
+
+
+
+
+  .content-blog {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    width: 1440px;
+
+
+
+    padding: 0px 60px;
+}
+
+.content-activities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    gap: 20px;
+
+    
+}
+
+
+.content-expences {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 20px;
+
+    
+}
+
+
+  .activities-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  .expences-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+
+
+
+
+
+/* PADDING OF UPPER-TEXT-BLOG */
+
+@media screen and (min-width: 525px) and (max-Width: 553.99px) {
+
+  .upper-big-text-blog {
+    padding-top: 100px;
+  }
+  
+}
+
+
+@media screen and (min-width: 500px) and (max-width: 524px) {
+
+  .upper-big-text-blog {
+    padding-top: 120px;
+  }
+  
+}
+
+
+
+/* PADDING OF THE REST */
+
+@media screen and (min-width: 500px) and (max-width: 553.99px) {
+
+  .article {
+    gap: 15px;
+
+    /* padding: 0px 120px; */
+    /* ACHTUNG ACHTUNG ACHTUNG ACHTUNG ACHTUNG DAS PADDING OBNEN DRÜBER HABE ICH GERADE GEMACHT ABER ES MUSS AUCH AUF OBERE SECTION ÜBERTRAGEN WERDEN */
+  }
+
+  .article-content {
+    padding: 0px 0px;
+
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    padding: 0px 30px;
+  }
+
+  h1 {
+    padding: 0px 30px;
+  }
+
+  .description {
+    padding: 0px 30px;
+  }
+
+  .article-info {
+    padding: 0px 30px;
+  }
+
+
+
+  .card-section {
+    padding: 0px 30px;
+  }
+
+
+
+
+
+  /* .upper-big-text-blog {
+    padding-top: 80px;
+  } */
+
+  
+  
+
+  .page-big-text-blog p {
+    padding: 32px 30px;
+  }
+
+
+
+
+
+  .rain-days-blog {
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.activities-expences-blog {
+  padding: 0px;
+}
+
+
+
+
+  .content-blog {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    width: 1440px;
+
+
+
+    padding: 0px 30px;
+}
+
+.content-activities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    gap: 20px;
+
+    
+}
+
+
+.content-expences {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 20px;
+
+    
+}
+
+
+  .activities-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  .expences-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+/* PADDING OF UPPER-TEXT-BLOG */
+
+@media screen and (min-width: 452px) and (max-width: 499.99px) {
+
+  .upper-big-text-blog {
+    padding-top: 120px;
+  }
+  
+}
+
+
+
+/* PADDING OF THE REST */
+
+@media screen and (min-width: 2px) and (max-width: 499.99px) {
+
+  .article {
+    gap: 15px;
+
+    /* padding: 0px 120px; */
+    /* ACHTUNG ACHTUNG ACHTUNG ACHTUNG ACHTUNG DAS PADDING OBNEN DRÜBER HABE ICH GERADE GEMACHT ABER ES MUSS AUCH AUF OBERE SECTION ÜBERTRAGEN WERDEN */
+  }
+
+  .article-content {
+    padding: 0px 0px;
+
+    margin-top: 15px;
+  }
+
+  .subtitle {
+    padding: 0px 15px;
+  }
+
+  h1 {
+    padding: 0px 15px;
+  }
+
+  .description {
+    padding: 0px 15px;
+  }
+
+  .article-info {
+    padding: 0px 15px;
+  }
+
+
+
+  .card-section {
+    padding: 0px 15px;
+  }
+
+
+
+
+
+  /* .upper-big-text-blog {
+    padding-top: 80px;
+  } */
+
+  
+  
+
+  .page-big-text-blog p {
+    padding: 32px 15px;
+  }
+
+
+
+
+
+  .rain-days-blog {
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.activities-expences-blog {
+  padding: 0px;
+}
+
+
+
+
+  .content-blog {
+    display: flex;
+    justify-content: space-between;
+    
+    
+    width: 1440px;
+
+
+
+    padding: 0px 15px;
+}
+
+.content-activities {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+    width: 100%;
+    
+    gap: 20px;
+
+    
+}
+
+
+.content-expences {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    
+    width: 100%;
+
+    gap: 20px;
+
+    
+}
+
+
+  .activities-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  
+
+  .expences-picture img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+}
+
+
+
+
 
 
 
@@ -1657,7 +2771,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
 /* SCHRIFTGRÖßE */
 
-@media screen and (min-width: 12px) and (max-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 768px) {
 
   .article-content {
     margin-top: 60px;
@@ -1707,6 +2821,235 @@ h1 {
 
   font-size: 16px;
 }
+
+
+
+
+
+
+
+
+
+
+/* HERE NEW AREA  */
+
+
+
+.page-big-text-blog p {
+  font-size: 16px;
+}
+
+
+
+h3 {
+  font-size: 18px;
+}
+
+
+.activities-text p {
+  font-size: 16px;
+}
+
+
+
+.expences-text p {
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+.follow-text {
+  font-size: 16px;
+}
+
+
+.share-button p {
+  font-size: 18px;
+}
+
+
+  
+}
+
+
+
+/* FONT-SIZE */
+
+@media screen and (min-width: 300px) and (max-width: 479.99px) {
+
+  .article-content {
+    margin-top: 60px;
+  }
+
+  .subtitle {
+  /* margin: 0 0 4px; */
+
+  font-size: 20px;  
+}
+
+h1 {
+  /* margin: 0; */
+
+  font-size: 35px;
+}
+
+.description {
+  /* max-width: 100%;
+  margin-bottom: 18px; */
+
+  font-size: 16.5px;
+}
+
+/* Informationen unter dem Text */
+
+
+
+/* Autorenkarte */
+
+
+
+.author-card h2 {
+  /* margin: 0; */
+
+  font-size: 16px;
+}
+
+.author-role {
+  /* margin: 2px 0 15px; */
+
+  font-size: 16px;
+}
+
+.author-text {
+  /* margin: 0; */
+
+  font-size: 16px;
+}
+
+
+
+
+
+
+
+
+
+.page-big-text-blog p {
+  font-size: 12px;
+}
+
+
+
+h3 {
+  font-size: 16px;
+}
+
+
+.activities-text p {
+  font-size: 12px;
+}
+
+
+
+.expences-text p {
+  font-size: 12px;
+}
+
+
+
+
+
+
+
+
+.follow-text {
+  font-size: 13px;
+}
+
+
+.share-button p {
+  font-size: 14px;
+}
+  
+}
+
+
+/* MARGIN-TOP ARTICLE */
+
+@media screen and (min-width: 412px) and (max-width: 451.99px) {
+
+  .article {
+    margin: 108px auto 22px;
+  }
+  
+}
+
+
+
+/* PADDING OF UPPER-TEXT-BLOG */
+
+@media screen and (min-width: 412px) and (max-width: 451.99px) {
+
+  .upper-big-text-blog {
+    padding-top: 140px;
+  }
+  
+}
+
+
+
+
+
+
+/* MARGIN-TOP ARTICLE */
+
+@media screen and (min-width: 354px) and (max-width: 411.99px) {
+
+  .article {
+    margin: 128px auto 22px;
+  }
+  
+}
+
+
+/* PADDING OF UPPER-TEXT-BLOG */
+
+@media screen and (min-width: 354px) and (max-width: 411.99px) {
+
+  .upper-big-text-blog {
+    padding-top: 160px;
+  }
+  
+}
+
+
+
+
+
+
+/* MARGIN-TOP ARTICLE */
+
+@media screen and (min-width: 302px) and (max-width: 353.99px) {
+
+  .article {
+    margin: 148px auto 22px;
+  }
+  
+}
+
+
+/* PADDING OF UPPER-TEXT-BLOG */
+
+@media screen and (min-width: 303px) and (max-width: 353.99px) {
+
+  .upper-big-text-blog {
+    padding-top: 180px;
+  }
   
 }
 
