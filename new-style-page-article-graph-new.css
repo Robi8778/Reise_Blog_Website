@@ -135,7 +135,7 @@ h3 {
 
   width: 100%;
   max-width: 1440px;
-  height: 400px;
+  /* height: 400px; */
 
   margin: 88px auto 22px;
 
@@ -858,7 +858,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
   }
 
   .article {
-    padding: 22px 50px;
+    padding: 0px 50px 22px 50px;
   }
 
   .page-big-text-blog p {
@@ -1559,6 +1559,12 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
     padding-left: 15px;
   } */
 
+
+  .page-follow-part {
+    padding-top: 8px;
+  }
+
+
   .footer-content {
     padding: 0px 15px 0px 15px;
   }
@@ -1838,7 +1844,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
     justify-content: flex-start;
     align-items: flex-start;
 
-    background-color: red;
+    /* background-color: red; */
   }
 
 
@@ -1851,7 +1857,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
     justify-content: center;
     align-items: flex-end;
 
-    background-color: blue;
+    /* background-color: blue; */
 
     padding-top: 80px;
   }
@@ -1868,7 +1874,7 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
 
     padding-left: 20px;
 
-    gap: 60px;
+    gap: 40px;
 
     height: fit-content;
     
@@ -1886,12 +1892,12 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
     display: flex;
     flex-direction: column;
     height: 70px;
-    width: 100px;
+    width: 80px;
 
     justify-content: flex-start;
     align-items: flex-start;
 
-    background-color: red;
+    /* background-color: red; */
   }
 
 
@@ -1904,9 +1910,9 @@ box-shadow: -0px 0px 0px rgba(3, 7, 18, 0.05),
     justify-content: center;
     align-items: flex-end;
 
-    background-color: blue;
+    /* background-color: blue; */
 
-    padding-top: 80px;
+    padding-top: 30px;
   }
 
 
