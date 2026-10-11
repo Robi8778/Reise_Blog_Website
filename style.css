@@ -704,12 +704,15 @@ button {
         position: fixed;
 
         left: 50%;
-        bottom: 15px;
+        /* bottom: 15px; */
+        bottom: 1px;
 
         transform: translateX(-50%);
 
-        width: calc(100% - 50px);
-        max-width: 360px;
+        /* width: calc(100% - 50px); */
+
+        width: 100%;
+        max-width: 768px;
 
         height: 58px;
 
@@ -758,6 +761,28 @@ button {
     .mobile-menu-item {
         transition: transform 0.2s ease;
     }
+
+
+
+
+
+
+
+
+    .place-for-mobile {
+      display: flex;
+      width: 100%;
+    }
+
+    .place-for-mobile-menu {
+      display: flex;
+      height: 58px;
+      width: 100%;
+
+      background-color: #F1C953;
+    }
+
+
 }
 
 /* Responsive Design */
@@ -1129,7 +1154,7 @@ button {
        KREISE POSITION
         */
 
-    .circle-one {
+    /* .circle-one {
         position: absolute;
 
         width: 75px;
@@ -1151,9 +1176,9 @@ button {
         bottom: 31%;
 
         z-index: 5;
-    }
+    } */
 
-    .animation {
+    /* .animation {
         position: absolute;
 
         width: 80px;
@@ -1176,7 +1201,7 @@ button {
         to {
             transform: rotate(360deg);
         }
-    }
+    } */
 
 
     /*
