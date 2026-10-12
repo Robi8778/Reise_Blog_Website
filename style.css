@@ -1074,6 +1074,11 @@ button {
     width: 25px;
     height: 25px;
   }
+
+    .slider-a-element img {
+    width: 650px;
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 420px) {
