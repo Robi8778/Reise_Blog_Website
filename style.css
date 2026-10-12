@@ -887,10 +887,13 @@ button {
     width: unset;
   }
 
+.landing-text {
+  left: 20vw;
+}
 
-  .landing-section-area {
-    width: unset;
-  }
+
+
+
 }
 
 
@@ -1050,7 +1053,7 @@ button {
 
 @media screen and (max-width: 600px) {
   details[open] {
-    height: 200px;
+    height: 220px;
   }
 
   .slider-a {
@@ -1074,6 +1077,10 @@ button {
 }
 
 @media screen and (max-width: 420px) {
+
+   details[open] {
+    height: 300px;
+  }
    /*
        Animation
         */
@@ -1310,7 +1317,7 @@ button {
   }
 
   details[open] {
-    height: 320px;
+    height: 360px;
   }
 
   .slider-a {
