@@ -910,6 +910,7 @@ button {
 
   .circle-group {
     display: none;
+    animation: unset;
   }
 
   .yellow-image {
@@ -1254,7 +1255,7 @@ button {
 
     z-index: 4;
 
-    animation: circlesFromBottom 1.3s ease-out 3.5s forwards;
+    animation: circlesFromBottom-two 1.3s ease-out 3.5s forwards;
   }
 
   .circle-one {
@@ -1282,21 +1283,58 @@ button {
     z-index: 5;
   }
 
-  @keyframes circlesMobile {
-    from {
-      transform: translateY(40px);
-      opacity: 0;
-    }
-
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
+@keyframes circlesFromBottom-two {
+  from {
+    transform: translateY(0);
+    opacity: 0;
   }
+
+  to {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
 
   details {
     height: 80px;
   }
 
+
+}
+
+
+@media screen and (max-width: 380px) {
+
+  footer {
+    font-size: 12px;
+  }
+
+  details[open] {
+    height: 320px;
+  }
+
+  .slider-a {
+    width: 320px;
+    height: 300px;
+    border-top-right-radius: 150px;
+  }
+
+  .slider-text {
+    width: 280px;
+    height: 170px;
+    padding: 10px;
+    top: 40px;
+    left: 20px;
+  }
+
+  .social-media img {
+    width: 20px;
+    height: 20px;
+  }
+
+    .slider-a-element img {
+    width: 550px;
+    height: 300px;
+  }
 
 }
