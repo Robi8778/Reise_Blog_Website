@@ -1,0 +1,24 @@
+h1 {
+  font-family: "Arima", serif;
+  color: #f1c953;
+  font-size: clamp(24px, 4vw, 60px);
+  font-weight: bold;
+  margin: 50px 50px;
+  background-color: #4ea487;
+  width:1050px;
+  padding-left: 30px;
+}
+
+.text {
+    border: 5px solid black;
+    height: 400px;
+    width: 1050px;
+    margin: 50px 50px;
+}
+
+.text p {
+    font-family: "Arima", serif;
+    font-size: clamp(24px, 4vw, 30px);
+    padding: 30px 30px;
+
+}
