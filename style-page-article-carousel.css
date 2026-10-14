@@ -5,9 +5,23 @@
     display: none;
 }
 
+.slider-wrapper {
+  display: none;
+}
 
 
+.mobile-page-one-destinations-area {
+  display: none;
+}
 
+/* h3 {
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+
+  font-size: 32px;
+  color: #54370D;
+} */
 
 
 /* HERE STARTS THE HEADER AREA OF PAGE ONE */
@@ -2222,8 +2236,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 
-
-  h3 {
+  .page-one-destinations-area h3 {
     font-size: 25px;
   }
 
@@ -2411,10 +2424,10 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 
-
-  h3 {
+.page-one-destinations-area h3 {
     font-size: 25px;
   }
+  
 
 
 
@@ -2694,9 +2707,10 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 
-  h3 {
+  .page-one-destinations-area h3 {
     font-size: 23px;
   }
+  
 
 
 
@@ -3022,9 +3036,10 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 
-  h3 {
+  .page-one-destinations-area h3 {
     font-size: 20px;
   }
+  
 
 
 
@@ -3271,9 +3286,10 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 
-  h3 {
+  .page-one-destinations-area h3 {
     font-size: 20px;
   }
+  
 
 
 
@@ -6951,9 +6967,19 @@ h1 {
 
 
 
-h3 {
-  font-size: 18px;
-}
+
+/* h3 {
+  font-size: unset;
+} */
+/* .page-one-destinations-area > h3 {
+    font-size: unset;
+  } */
+
+
+  .mobile-page-one-destinations-area > h3 {
+    font-size: 18px;
+  }
+
 
 
 .activities-text p {
@@ -7055,7 +7081,7 @@ h1 {
 
 
 
-h3 {
+.mobile-page-one-destinations-area h3 {
   font-size: 16px;
 }
 
@@ -7175,7 +7201,351 @@ h3 {
 
 
 
+/* HERE ENDS THE OLD SLIDER FOR NON-MOBILE VERSION: */
 
+@media screen and (min-width: 2px) and (max-width: 768px) {
+
+  .page-one-destinations-area {
+    display: none;
+  }
+  
+}
+
+
+/* HERE STARTS THE NEW SLIDER FOR MOBILE VERSION */
+
+
+
+@media screen and (min-width: 363px) and (max-width: 768px) {
+
+  .mobile-page-one-destinations-area {
+    /* z-index: 1; */
+
+    display: flex;
+
+    /* height: 600px; */
+    height: unset;
+    width: 100%;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-page-one-destinations-area h3 {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+
+    /* font-size: 32px; */
+
+    text-align: center;
+
+    padding-top: 66px;
+    padding-bottom: 20px;
+
+    color: #54370D;
+}
+
+
+
+
+
+  
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.slider-wrapper input[type="radio"] {
+    display: none;
+}
+
+/* Der Anzeigekasten schneidet die äußeren Hälften ab */
+.slider_bb_container {
+    width: 350px; 
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NEU: Die Leiste springt/animiert basierend auf dem ausgewählten Zustand */
+.slider_bb {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    transition: transform 300ms ease-in-out; /* Sorgt für das geschmeidige Mitfahren */
+}
+
+.slider_bb_element {
+    z-index: 1;
+    width: 100px;
+    height: 80%;
+    background-color: blue;
+    flex-shrink: 0;
+    border-radius: 16px;
+
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.07),
+        0px 5px 4px rgba(3, 7, 18, 0.14),
+        0px 12px 9px rgba(3, 7, 18, 0.20),
+        0px 20px 15px rgba(3, 7, 18, 0.27),
+        0px 32px 24px rgba(3, 7, 18, 0.34);
+
+    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+    transition: all 250ms ease-in-out;
+}
+
+/* ==========================================================================
+   NEU: DYNAMISCHE POSITIONIERUNG DER REIHE (Zentrierung im Kasten)
+   Die Reihe startet standardmäßig zentriert auf Element 3 (0px Verschiebung).
+   ========================================================================== */
+#slide-1:checked ~ .slider_bb_container .slider_bb { transform: translateX(200px); }
+#slide-2:checked ~ .slider_bb_container .slider_bb { transform: translateX(100px); }
+#slide-3:checked ~ .slider_bb_container .slider_bb { transform: translateX(0px); }
+#slide-4:checked ~ .slider_bb_container .slider_bb { transform: translateX(-100px); }
+#slide-5:checked ~ .slider_bb_container .slider_bb { transform: translateX(-200px); }
+
+
+/* ==========================================================================
+   LOGIK FÜR DIE 3D-KARTEN (Identisch)
+   ========================================================================== */
+
+/* Aktiver Zustand */
+#slide-1:checked ~ .slider_bb_container .slider_bb .slide-1-el,
+#slide-2:checked ~ .slider_bb_container .slider_bb .slide-2-el,
+#slide-3:checked ~ .slider_bb_container .slider_bb .slide-3-el,
+#slide-4:checked ~ .slider_bb_container .slider_bb .slide-4-el,
+#slide-5:checked ~ .slider_bb_container .slider_bb .slide-5-el {
+    z-index: 2;
+    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+    background-color: red;
+    margin: 0px 40px 0px 40px;
+}
+
+/* Folgende Elemente abkippen */
+#slide-1:checked ~ .slider_bb_container .slider_bb .slide-1-el ~ .slider_bb_element,
+#slide-2:checked ~ .slider_bb_container .slider_bb .slide-2-el ~ .slider_bb_element,
+#slide-3:checked ~ .slider_bb_container .slider_bb .slide-3-el ~ .slider_bb_element,
+#slide-4:checked ~ .slider_bb_container .slider_bb .slide-4-el ~ .slider_bb_element,
+#slide-5:checked ~ .slider_bb_container .slider_bb .slide-5-el ~ .slider_bb_element {
+    background-color: gold;
+    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+}
+
+
+/* ==========================================================================
+   BUTTON-STYLING (Identisch)
+   ========================================================================== */
+
+.slider_nav {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.nav-btn:hover {
+    background-color: #999;
+}
+
+#slide-1:checked ~ .slider_nav .nav-btn:nth-child(1),
+#slide-2:checked ~ .slider_nav .nav-btn:nth-child(2),
+#slide-3:checked ~ .slider_nav .nav-btn:nth-child(3),
+#slide-4:checked ~ .slider_nav .nav-btn:nth-child(4),
+#slide-5:checked ~ .slider_nav .nav-btn:nth-child(5) {
+    width: 32px;
+    background-color: red;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 2px) and (max-width:362.99px) {
+
+  .mobile-page-one-destinations-area {
+    /* z-index: 1; */
+
+    display: flex;
+
+    /* height: 600px; */
+    height: unset;
+    width: 100%;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile-page-one-destinations-area h3 {
+    font-family: 'Arima';
+    font-style: normal;
+    font-weight: 400;
+
+    /* font-size: 32px; */
+
+    text-align: center;
+
+    padding-top: 66px;
+    padding-bottom: 20px;
+
+    color: #54370D;
+}
+
+
+
+
+
+  
+.slider-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.slider-wrapper input[type="radio"] {
+    display: none;
+}
+
+/* Der Anzeigekasten schneidet die äußeren Hälften ab */
+.slider_bb_container {
+    width: 300px; 
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* NEU: Die Leiste springt/animiert basierend auf dem ausgewählten Zustand */
+.slider_bb {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    transition: transform 300ms ease-in-out; /* Sorgt für das geschmeidige Mitfahren */
+}
+
+.slider_bb_element {
+    z-index: 1;
+    width: 100px;
+    height: 80%;
+    background-color: blue;
+    flex-shrink: 0;
+    border-radius: 16px;
+
+    box-shadow: 0px 1px 1px rgba(3, 7, 18, 0.07),
+        0px 5px 4px rgba(3, 7, 18, 0.14),
+        0px 12px 9px rgba(3, 7, 18, 0.20),
+        0px 20px 15px rgba(3, 7, 18, 0.27),
+        0px 32px 24px rgba(3, 7, 18, 0.34);
+
+    transform: perspective(250px) rotateY(20deg) translateX(-20px);
+    transform-origin: 50% 50%;
+    transition: all 250ms ease-in-out;
+}
+
+/* ==========================================================================
+   NEU: DYNAMISCHE POSITIONIERUNG DER REIHE (Zentrierung im Kasten)
+   Die Reihe startet standardmäßig zentriert auf Element 3 (0px Verschiebung).
+   ========================================================================== */
+#slide-1:checked ~ .slider_bb_container .slider_bb { transform: translateX(200px); }
+#slide-2:checked ~ .slider_bb_container .slider_bb { transform: translateX(100px); }
+#slide-3:checked ~ .slider_bb_container .slider_bb { transform: translateX(0px); }
+#slide-4:checked ~ .slider_bb_container .slider_bb { transform: translateX(-100px); }
+#slide-5:checked ~ .slider_bb_container .slider_bb { transform: translateX(-200px); }
+
+
+/* ==========================================================================
+   LOGIK FÜR DIE 3D-KARTEN (Identisch)
+   ========================================================================== */
+
+/* Aktiver Zustand */
+#slide-1:checked ~ .slider_bb_container .slider_bb .slide-1-el,
+#slide-2:checked ~ .slider_bb_container .slider_bb .slide-2-el,
+#slide-3:checked ~ .slider_bb_container .slider_bb .slide-3-el,
+#slide-4:checked ~ .slider_bb_container .slider_bb .slide-4-el,
+#slide-5:checked ~ .slider_bb_container .slider_bb .slide-5-el {
+    z-index: 2;
+    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
+    background-color: red;
+    margin: 0px 40px 0px 40px;
+}
+
+/* Folgende Elemente abkippen */
+#slide-1:checked ~ .slider_bb_container .slider_bb .slide-1-el ~ .slider_bb_element,
+#slide-2:checked ~ .slider_bb_container .slider_bb .slide-2-el ~ .slider_bb_element,
+#slide-3:checked ~ .slider_bb_container .slider_bb .slide-3-el ~ .slider_bb_element,
+#slide-4:checked ~ .slider_bb_container .slider_bb .slide-4-el ~ .slider_bb_element,
+#slide-5:checked ~ .slider_bb_container .slider_bb .slide-5-el ~ .slider_bb_element {
+    background-color: gold;
+    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+}
+
+
+/* ==========================================================================
+   BUTTON-STYLING (Identisch)
+   ========================================================================== */
+
+.slider_nav {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-btn {
+    width: 16px;
+    height: 16px;
+    background-color: #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 250ms ease-in-out;
+}
+
+.nav-btn:hover {
+    background-color: #999;
+}
+
+#slide-1:checked ~ .slider_nav .nav-btn:nth-child(1),
+#slide-2:checked ~ .slider_nav .nav-btn:nth-child(2),
+#slide-3:checked ~ .slider_nav .nav-btn:nth-child(3),
+#slide-4:checked ~ .slider_nav .nav-btn:nth-child(4),
+#slide-5:checked ~ .slider_nav .nav-btn:nth-child(5) {
+    width: 32px;
+    background-color: red;
+}
+  
+}
 
 
 
