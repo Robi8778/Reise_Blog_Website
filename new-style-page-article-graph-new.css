@@ -50,11 +50,12 @@ h3 {
 }
 
 .navi-bar {
-  display: flex;
+  /* display: flex; */
 }
 
 .navi-bar ul {
   display: flex;
+  position: relative;
 
   list-style-type: none;
   gap: 50px;
@@ -89,14 +90,14 @@ h3 {
   text-decoration: none;
 }
 
-.navi-bar li {
+.navi-bar-navi-points li {
     position: relative;
 }
 
 .image-header {
     position: absolute;
     left: 2.5px;
-    bottom: 2px;
+    bottom: -28px;
 
     width: 100%;
     height: auto;
@@ -104,7 +105,7 @@ h3 {
     opacity: 0;
 }
 
-.navi-bar li:hover .image-header {
+.navi-bar-navi-points li:hover .image-header {
     opacity: 1;
 }
 
