@@ -7692,6 +7692,186 @@ h1 {
   width: 1000px;
 }
   
+
+
+
+/* .page-one-text-list-area-under-blog-list {
+  display: flex;
+  width: 100%;
+}
+
+.text-list-content-upper {
+  justify-content: center;
+}
+
+.text-list-content-upper {
+  justify-content: center;
+} */
+
+
+
+
+
+
+.page-one-text-list-area-under-blog-list {
+  padding: 44px 0px 44px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  /* width: 1264px; */
+  max-width: 100%;
+
+  align-items: center;
+  
+  padding-left: 130px;
+
+  /* margin-right: 74px; */
+  padding-right: 176px;
+}
+
+.content-content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1134px;
+  height: 100%;
+}
+
+.text-list-content-upper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* flex-direction: column; */
+  
+  /* width: 1000px; */
+
+  /* padding: 10px 10px 0px 100px; */
+
+  z-index: 2;
+
+  margin-bottom: -20px;
+
+  /* padding-left: 180px; */
+
+  padding-left: 30px;
+}
+
+
+.text-list-content-under {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  /* flex-direction: column; */
+  
+  /* width: 1000px; */
+
+  width: 100%;
+
+  /* padding-left: 100px; */
+
+  z-index: 1;
+
+  /* padding-left: 210px;
+  padding-right: 130px; */
+  
+  /* max-width: 1080px; */
+
+  padding-left: 80px;
+}
+
+
+
+.light-bulb-box {
+  z-index: 2;
+
+
+  display: flex;
+  background-color: #4EA487;
+  width: fit-content;
+  border-radius: 10px;
+
+  align-items: center;
+  padding: 15px;
+
+  transform-origin: 50% 50%;
+  transform: rotate(-13.67deg);
+
+  justify-content: center;
+  
+}
+
+
+.light-bulb-box p {
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 28px;
+
+  color: #F1C953;
+}
+
+
+
+/* .under-list-textbox-page-one {
+  padding: 10px 10px;
+} */
+
+
+.under-list-page-one {
+  background-color: #4EA48733;
+  border-radius: 30px;
+}
+
+
+
+.under-list-page-one li {
+  padding: 5px 5px;
+
+
+  font-family: 'Palanquin';
+  font-style: normal;
+  font-weight: 400;
+
+  font-size: 24px;
+
+  color: #3D3D3D;
+
+  margin: 5px 25px;
+}
+
+
+.under-list-page-one a {
+  color: #2b8d6e;
+  font-weight: bolder;
+
+  text-decoration: none;
+}
+
+
+/* .under-list-page-one > .text-list-part-one {
+  padding-top: 10px;
+} */
+
+
+/* .text-list-part-one {
+  margin-top: 10px;
+} */
+
+/* .text-list-part-two {
+  margin-bottom: 10px;
+} */
+
+
+/* .text-list-part-one {
+  padding: 5px 5px;
+  margin: 5px 25px;
+} */
+
+
+
 }
 
 

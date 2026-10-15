@@ -50,7 +50,7 @@ h3 {
 }
 
 .navi-bar {
-  /* display: flex; */
+  display: flex;
 }
 
 .navi-bar ul {
