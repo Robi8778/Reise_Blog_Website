@@ -20,9 +20,10 @@ h1 {
   font-weight: bold;
   /* margin: 50px 50px; */
   background-color: #4ea487;
-  max-width:1050px;
+  /* max-width:1050px; */
   /* padding-left: 30px; */
   text-align: center;
+  width: 100%;
 }
 
 .text {
