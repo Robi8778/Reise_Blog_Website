@@ -1,10 +1,9 @@
 /* HERE STARTS THE PART OF THE HEADER */
 
+
 .background {
   max-width: 1440px;
 }
-
-  
 
 header {
   width: 100%;
@@ -163,14 +162,20 @@ footer ul {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: normal;
-  /* max-width: 1440px; */
+  /* justify-content: normal; */
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 clamp(5px, 2vw, 50px);
+  margin: 0 auto;
 }
 
-/* .faq-part {
-  
+.faq-part {
+  width: 100%;
   max-width: 1440px;
-} */
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
 
 summary {
   font-family: "Palanquin", serif;
@@ -178,37 +183,31 @@ summary {
   font-size: clamp(16px, 2vw, 24px);
   font-weight: bold;
   line-height: 1;
-  width: 1440px;
 }
 
 details {
   background-color: #f1c953;
   border-radius: 12px;
-  margin-bottom: 20px;
-  padding-bottom: 15px;
   height: 60px;
-  /* max-width: 1440px; */
+  flex: 1;
+  min-width: 0;
+  margin: 8px 0px;
 }
 
 details[open] {
   background-color: #f1c953;
   border-radius: 12px;
-  margin-bottom: 20px;
-  padding: 0 15px;
   height: 150px;
-}
-
-summary {
-  padding: 18px 0;
-  font-weight: bold;
-  cursor: pointer;
-  padding-left: 15px;
+  max-width: 1440px;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 summary {
   position: relative;
 
-  padding: 18px 50px 18px 15px;
+  padding: 18px 20px 18px 20px;
 
   font-weight: bold;
   cursor: pointer;
@@ -262,8 +261,7 @@ details p {
   height: 550px;
 
   margin: 0 auto;
-
-  overflow: hidden;
+  overflow: hidden
 }
 
 .yellow-start {
@@ -346,32 +344,33 @@ details p {
 
 .circle-one {
   position: absolute;
-  bottom: 20%;
-  left: 30%;
+  bottom: 50px;
+  left: 50px;
   z-index: 4;
 }
 
 .circle-two {
   position: absolute;
-  bottom: 30%;
-  left: 33.8%;
+  bottom: 80%;
+  left: 80%;
   z-index: 4;
 }
 
 .animation {
   position: absolute;
-  bottom: 22.5%;
-  left: 30.8%;
+  bottom: 50%;
+  left: 50%;
 
   animation: rotateText 8s ease-in-out infinite;
   z-index: 5;
 }
 
 .circle-group {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+  position: relative;
+  width: 128px;
+  height: 128px;
   opacity: 0;
+  left: 28%;
 
   z-index: 4;
 
@@ -510,114 +509,105 @@ details p {
   resize: none;
 }
 
-  :root {
-      --green: rgba(78, 164, 135, 1);
-      --green-dark: #2f8f62;
-      --check: #f1c953; 
-      --text: #1f3a4d;
-      --border: #b9c4cc;
-    }
+:root {
+  --green: rgba(78, 164, 135, 1);
+  --green-dark: #2f8f62;
+  --check: #f1c953;
+  --text: #1f3a4d;
+  --border: #b9c4cc;
+}
 
-    .card {
-      background: #fff;
-      padding: 24px 28px;
-     
-    }
+.card {
+  background: #fff;
+  padding: 24px 28px;
+}
 
-  
-    .checkbox {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      cursor: pointer;
-      color: var(--text);
-      font-size: 16px;
-      user-select: none;
-    }
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 16px;
+  user-select: none;
+}
 
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
-    .checkbox input {
-      position: absolute;
-      opacity: 0;
-      width: 0;
-      height: 0;
-    }
+.box {
+  position: relative;
+  flex: 0 0 22px;
+  width: 22px;
+  height: 22px;
+  border: 2px solid var(--border);
+  border-radius: 5px;
+  background: #fff;
+  transition:
+    background 0.15s,
+    border-color 0.15s;
+}
 
-  
-    .box {
-      position: relative;
-      flex: 0 0 22px;
-      width: 22px;
-      height: 22px;
-      border: 2px solid var(--border);
-      border-radius: 5px;
-      background: #fff;
-      transition: background .15s, border-color .15s;
-    }
+.box::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 5px;
+  height: 10px;
+  border: solid var(--check);
+  border-width: 0 2.5px 2.5px 0;
+  transform: rotate(45deg) scale(0);
+  transition: transform 0.15s;
+}
 
-   
-    .box::after {
-      content: "";
-      position: absolute;
-      left: 6px;
-      top: 2px;
-      width: 5px;
-      height: 10px;
-      border: solid var(--check);
-      border-width: 0 2.5px 2.5px 0;
-      transform: rotate(45deg) scale(0);
-      transition: transform .15s;
-    }
+.checkbox input:checked + .box {
+  background: var(--green);
+  border-color: var(--green);
+}
 
-    .checkbox input:checked + .box {
-      background: var(--green);
-      border-color: var(--green);
-    }
+.checkbox input:checked + .box::after {
+  transform: rotate(45deg) scale(1);
+}
 
-    .checkbox input:checked + .box::after {
-      transform: rotate(45deg) scale(1);
-    }
+.checkbox:hover .box {
+  border-color: var(--green);
+}
 
-    .checkbox:hover .box {
-      border-color: var(--green);
-    }
+.checkbox input:focus-visible + .box {
+  outline: 3px solid rgba(63, 174, 122, 0.4);
+  outline-offset: 2px;
+}
 
-    
-    .checkbox input:focus-visible + .box {
-      outline: 3px solid rgba(63, 174, 122, .4);
-      outline-offset: 2px;
-    }
+button {
+  margin-top: 20px;
+  padding: 10px 28px;
+  border: none;
+  border-radius: 8px;
+  background: var(--green);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s;
+}
 
-    button {
-      margin-top: 20px;
-      padding: 10px 28px;
-      border: none;
-      border-radius: 8px;
-      background: var(--green);
-      color: #fff;
-      font-size: 16px;
-      font-weight: 600;
-      cursor: pointer;
-      transition: background .15s;
-    }
+button:hover {
+  background: var(--green-dark);
+}
 
-    button:hover {
-      background: var(--green-dark);
-    }
-
-  
-    .card:not(:has(#agree:checked)) button {
-      cursor: not-allowed;
-      pointer-events: none;
-    }
-
-
-
+.card:not(:has(#agree:checked)) button {
+  cursor: not-allowed;
+  pointer-events: none;
+}
 
 .privacy a {
   color: rgba(78, 164, 135, 1);
   text-decoration: none;
- 
 }
 
 button {
@@ -879,31 +869,43 @@ button {
 }
 
 @media screen and (max-width: 1339px) {
-   summary {
+  summary {
     width: unset;
   }
 
+  .yellow-start {
+    animation: unset;
+  }
   .contact {
     width: unset;
   }
 
-.landing-text {
-  left: 20vw;
+  .landing-text {
+    left: 20vw;
+  }
+    .background {
+    display: none;
+  }
+    .circle-group {
+    display: none;
+    animation: unset;
+  }
+
+   .landing-text {
+    animation: unset;
+  }
+  
+  .yellow-image {
+    display: none;
+  }
 }
-
-
-
-
-}
-
-
 
 @media screen and (max-width: 1080px) {
- .slider-text p br {
-        display: none;
-    }
+  .slider-text p br {
+    display: none;
+  }
 
-   .yellow-start {
+  .yellow-start {
     animation: unset;
   }
 
@@ -923,8 +925,6 @@ button {
   .landing-text {
     animation: unset;
   }
-
-
 
   details[open] {
     height: 180px;
@@ -1049,8 +1049,6 @@ button {
   }
 }
 
-
-
 @media screen and (max-width: 600px) {
   details[open] {
     height: 220px;
@@ -1075,18 +1073,17 @@ button {
     height: 25px;
   }
 
-    .slider-a-element img {
+  .slider-a-element img {
     width: 650px;
     height: 300px;
   }
 }
 
 @media screen and (max-width: 420px) {
-
-   details[open] {
+  details[open] {
     height: 300px;
   }
-   /*
+  /*
        Animation
         */
 
@@ -1227,7 +1224,7 @@ button {
 
     font-family: "Palanquin", serif;
 
-    font-size: 11px;
+    font-size: 16px;
 
     line-height: 1.2;
 
@@ -1260,10 +1257,12 @@ button {
 
   .circle-group {
     display: flex;
-    position: absolute;
+    position: relative;
     opacity: 0;
-    top: 35%;
+    top: 220px;
     left: 6%;
+    width: 128px;
+    height: 128px;
 
     z-index: 4;
 
@@ -1272,53 +1271,54 @@ button {
 
   .circle-one {
     position: absolute;
-    bottom: 70%;
-    left: 10%;
+    bottom: 50px;
+    left: 50px;
     z-index: 4;
     scale: 0.8;
   }
 
   .circle-two {
     position: absolute;
-    bottom: 79%;
-    left: 25%;
+    bottom: 80%;
+    left: 80%;
     z-index: 4;
   }
 
   .animation {
     position: absolute;
-    bottom: 72%;
-    left: 13%;
+    bottom: 50%;
+    left: 50%;
     scale: 0.8;
 
     animation: rotateText 8s ease-in-out infinite;
     z-index: 5;
   }
 
-@keyframes circlesFromBottom-two {
-  from {
-    transform: translateY(0);
-    opacity: 0;
-  }
+  @keyframes circlesFromBottom-two {
+    from {
+      transform: translateY(0);
+      opacity: 0;
+    }
 
-  to {
-    transform: translateY(0%);
-    opacity: 1;
+    to {
+      transform: translateY(0%);
+      opacity: 1;
+    }
   }
-}
 
   details {
     height: 80px;
   }
-
-
 }
 
-
 @media screen and (max-width: 380px) {
+summary {
+  
+  padding: 18px 20px 18px 30px;
+}
 
   footer {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   details[open] {
@@ -1344,9 +1344,8 @@ button {
     height: 20px;
   }
 
-    .slider-a-element img {
+  .slider-a-element img {
     width: 550px;
     height: 300px;
   }
-
 }
