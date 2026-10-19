@@ -1,5 +1,9 @@
 
 
+/* body {
+  overflow: hidden;
+} */
+
 .mobile-menu {
     display: none;
 }
@@ -144,7 +148,7 @@ h1 {
   align-items: center;
   gap: 28px;
   flex-direction: row;
-  font-size: 11px;
+  font-size: 16px;
 }
 
 .article-info span {
@@ -152,6 +156,7 @@ h1 {
   display: flex;
   gap: 3px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .article-info p {
@@ -183,13 +188,13 @@ h1 {
   margin: 0;
   color: rgba(84, 55, 13, 1);
   font-family: "Arima", serif;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .author-role {
   margin: 2px 0 15px;
   color: rgba(84, 55, 13, 1);
-  font-size: 18px;
+  font-size: 22px;
   font-family: "Arima", serif;
   font-weight: 400;
 }
@@ -197,7 +202,7 @@ h1 {
 .author-text {
   margin: 0;
   color: rgba(84, 55, 13, 1);
-  font-size: 16px;
+  font-size: 20px;
   line-height: 1.25;
   text-align: left;
 }
@@ -998,7 +1003,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   }
 
   .author-text {
-    font-size: 13px;
+    font-size: 17px;
   }
   
   .content-activities {
@@ -1181,7 +1186,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   }
 
   .author-text {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .page-big-text-blog p {
@@ -1288,7 +1293,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   }
 
   .author-text {
-    font-size: 13px;
+    font-size: 16px;
   }
 
   .page-big-text-blog p {
@@ -1414,6 +1419,19 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 }
 
+@media screen and (min-width: 1px) and (max-width: 963.99px) {
+
+  .author-card h2 {
+  font-size: 16px;
+}
+
+.author-role {
+  font-size: 16px;
+}
+
+  
+}
+
 @media screen and (min-width: 893px) and (max-width: 963.99px) {
 
   .subtitle {
@@ -1433,7 +1451,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   }
 
   .author-text {
-    font-size: 11px;
+    font-size: 16px;
   }
 
   .page-big-text-blog p {
@@ -1564,6 +1582,9 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
 @media screen and (min-width: 804px) and (max-width: 892px) {
+  .article-info {
+    flex-wrap: wrap;
+  }
 
   .additionals-navi-bar ul {
     gap: 36px;
@@ -1574,7 +1595,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   }
 
   h1 {
-    font-size: 40px;
+    font-size: 35px;
   }
 
   .description {
@@ -1609,7 +1630,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
   .author-text {
-    font-size: 11px;    
+    font-size: 16px;    
   }
 
   .page-big-text-blog p {
@@ -1703,6 +1724,9 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
 @media screen and (min-width: 769px) and (max-width: 803.99px) {
+  .article-info {
+    flex-wrap: wrap;
+  }
 
   .additionals-navi-bar ul {
     gap: 20px;
@@ -1748,7 +1772,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 }
 
   .author-text {
-    font-size: 11px;    
+    font-size: 16px;    
   }
 
   .page-big-text-blog p {
@@ -1854,7 +1878,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   .article {
     padding: 22px 15px;
     margin: 44px auto 11px;
-    margin-bottom: 80px;
+    margin-bottom: 0px;
   }
 
   .page-big-text-blog p {
@@ -1893,6 +1917,108 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 /* HERE STARTS THE MOBILE VERSION AREA */
 
+
+/* HERE STARTS THE BORDER FOR THE AUTHOR-CARD-AREA */
+
+
+/* @media screen and (min-width: 700px) and (max-width: 768px) {
+
+  .author-card-border {
+    display: flex;
+    max-width: 768px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .author-card {
+    margin-left: 50px;
+    margin-right: 50px;
+  }
+  
+} */
+
+@media screen and (min-width: 700px) and (max-width: 768px) {
+
+  .author-card {
+    max-width: 528px;
+  }
+
+  .follow-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
+
+@media screen and (min-width: 500px) and (max-width: 699.99px) {
+
+  .author-card {
+    max-width: 480px;
+  }
+
+  .follow-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
+
+@media screen and (min-width: 400px) and (max-width: 499.99px) {
+
+  .author-card {
+    max-width: 370px;
+  }
+
+  .follow-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
+
+@media screen and (min-width: 350px) and (max-width: 399.99px) {
+
+  .author-card {
+    max-width: 320px;
+  }
+
+  .follow-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 349.99px) {
+
+  .author-card {
+    max-width: 290px;
+  }
+
+  .follow-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
+
+@media screen and (min-width: 300px) and (max-Width: 319.99px) {
+
+  .author-card {
+    max-width: 270px;
+  }
+
+  .follow-text {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
 
 /* HERE STARTS THE AREA OF THE TWO LISTS OF THE MEDIA QUARRIES */
 
@@ -2245,11 +2371,11 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   /* NEW */
   
 .page-one-text-blog-list p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .page-one-text-blog-list li {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
@@ -2289,7 +2415,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   font-family: 'Palanquin';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #3D3D3D;
   margin: 0px 0px;
 }
@@ -2357,11 +2483,11 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   /* NEW */
   
 .page-one-text-blog-list p {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 .page-one-text-blog-list li {
-  font-size: 15px;
+  font-size: 16px;
 }
 
 
@@ -2401,7 +2527,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   font-family: 'Palanquin';
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 16px;
   color: #3D3D3D;
   margin: 0px 0px;
 }
@@ -2469,11 +2595,11 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   /* NEW */
   
 .page-one-text-blog-list p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .page-one-text-blog-list li {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 
@@ -2513,7 +2639,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   font-family: 'Palanquin';
   font-style: normal;
   font-weight: 400;
-  font-size: 12px;
+  font-size: 16px;
   color: #3D3D3D;
   margin: 0px 0px;
 }
@@ -2652,7 +2778,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   }
 
   .author-card {
-  max-width: 528px;
+  /* max-width: 528px; */
   width: 100%;
   height: auto;  
 }
@@ -2705,18 +2831,18 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   .follow-under-box {
     display: flex;
     padding-left: 20px;
-    gap: 40px;
+    gap: 10px;
     height: fit-content;
   }
 
 #menu-toggle:checked ~ .menu .share-button {
-  transform: translateX(15px);
+  transform: translateX(60px);
     padding: 8px 15px;
     font-size: 12px;
 }
 
 #menu-toggle:checked ~ .menu .links {
-  transform: translateX(15px);
+  transform: translateX(60px);
     max-width: 300px;
     opacity: 1;
 }
@@ -3407,7 +3533,7 @@ h1 {
 }
 
 .page-big-text-blog p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .mobile-page-one-destinations-area h3 {
@@ -3415,19 +3541,19 @@ h1 {
 }
 
 .activities-text p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .expences-text p {
-  font-size: 12px;
+  font-size: 16px;
 }
 
 .follow-text {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .share-button p {
-  font-size: 14px;
+  font-size: 16px;
 }
   
 }
