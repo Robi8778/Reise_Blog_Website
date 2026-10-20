@@ -595,6 +595,8 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  /* padding-bottom: 1px; */
+  /* padding-top: 1px; */
 }
 
 .words-cookies-imprint {
@@ -633,6 +635,61 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 
 /* HERE STARTS THE AREA OF THE MEDIA QUARRIES */
+
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+  .footer-content {
+    display: flex;
+    align-items: center;
+    /* padding-top: 1px; */
+  }
+
+  .additionals {
+    display: flex;
+    align-items: center;
+    padding-top: 1px;
+  }
+
+  .additionals-navi-bar {
+    display: flex;
+    align-items: center;
+  }
+
+  .additionals-navi-bar-class-list {
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-top: 1px;
+  }
+
+  .copyright img {
+    display: flex;
+    align-items: center;
+  }
+
+  .copyright a {
+    display: flex;
+    align-items: center;
+  }
+
+  .imprint {
+    padding-top: 1px;
+  }
+
+  .cookie {
+    padding-top: 1px;
+  }
+
+  .social-media {
+    padding-top: 1px;
+  }
+  
+}
 
 
 /* HERE STARTS THE AREA OF THE SLIDER MEDIA QUARRIES */
