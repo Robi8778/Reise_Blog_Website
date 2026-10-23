@@ -5,7 +5,248 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+/* HERE STARTS THE HEADER AREA OF PAGE TWO */
+
+.header-class {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #4EA487;
+  width: 100%;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1440px;
+  padding-left: 120px;
+  height: 128px;
+  gap: 70px;
+}
+
+.header-content img {
+  height: 72px;
+}
+
+.navi-bar {
+  display: flex;
+}
+
+.navi-bar ul {
+  display: flex;
+  position: relative;
+  list-style-type: none;
+  gap: 50px;
+  padding: 0px;
+}
+
+.navi-bar a {
+  text-decoration: none;
+  color: #f8f5eb;
+  font-family: 'Arima';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+
+/* Hover Effects Header */
+
+.highlight {
+  position: relative;
+  display: inline-block;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navi-bar-navi-points li {
+    position: relative;
+}
+
+.image-header {
+    position: absolute;
+    left: 2.5px;
+    bottom: -28px;
+    width: 100%;
+    height: auto;
+    opacity: 0;
+}
+
+.navi-bar-navi-points li:hover .image-header {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+/* body {
+  height: 100dvh;
+} */
+
+
+
+@media screen and (min-width: 1165px) and (max-width: 1205px) {
+
+  .header-content {
+    padding-left: 100px;
+  }
+
+}
+
+@media screen and (min-width: 1125px) and (max-width: 1164px) {
+
+  .header-content {
+    padding-left: 80px;
+  }
+
+}
+
+@media screen and (min-width: 994px) and (max-width: 1124px) {
+
+  .header-content {
+    padding-left: 50px;
+  }
+
+}
+
+
+@media screen and (min-width: 942px) and (max-width: 993.99px) {
+
+  .header-content {
+    padding-left: 35px;
+  }
+
+}
+
+
+@media screen and (min-width: 800px) and (max-width: 941.99px) {
+
+  .header-content {
+    padding-left: 15px;
+  }
+
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 799.99px) {
+
+  .header-content {
+    padding-left: 15px;
+  }
+
+  .footer-content {
+    padding: 0px 25px 0px 25px;
+  }
+
+  .article {
+    padding: 22px 25px;
+    margin: 44px auto 11px;
+    margin-bottom: 80px;
+  }
+
+  .page-big-text-blog p {
+    padding: 11px 25px;
+  }
+
+  .rain-days-blog {
+    padding: 33px 220px;
+  }
+
+  .content-blog {
+    padding: 0px 25px;
+  }
+  
+}
+
+@media screen and (min-width: 1px) and (max-width: 768px) {
+
+  .header-content {
+    padding-left: 0px;
+  }
+
+  .navi-bar {
+    display: none;
+  }
+
+  .header-content {
+    justify-content: center;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .impressum-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100dvh;
+    width: 100%;
+
+    gap: 80px;
+}
+
+
+main {
+  
+  flex: 1; 
+}
+
+
+
+
+
+
+/* .impressum-content {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -14,7 +255,7 @@
     width: 100%;
 
     gap: 80px;
-}
+} */
 
 
 .headline-impress {

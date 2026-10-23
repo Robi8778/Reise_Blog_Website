@@ -20,6 +20,73 @@
 
 
 
+ /* :root {
+  interpolate-size: allow-keywords;
+}
+
+
+details::content:open {
+  transition: all 1s ease-in-out;
+}
+
+.animated-details::details-content {
+  
+  transition: all 250ms ease-in-out;
+  
+  
+  overflow: hidden; 
+  height: 0;
+}
+
+
+.animated-details[open]::details-content {
+  height: auto;
+} */
+
+
+
+
+/* HERE STARTS THE ANIMATION OF THE FAQ-AREA */
+
+
+.animatet-details {
+  border-bottom: 1px solid #ddd;
+}
+
+
+.animatet-details summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+
+.animatet-details summary::-webkit-details-marker {
+  display: none;
+}
+
+
+.animatet-details::details-content {
+  height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition:
+    height 2s ease,
+    opacity 2s ease,
+    content-visibility 2s allow-discrete;
+}
+
+
+.animatet-details[open]::details-content {
+  height: auto;
+  opacity: 1;
+}
+
+
+.animatet-details {
+  interpolate-size: allow-keywords;
+}
+
+
 
 
 
@@ -511,6 +578,8 @@ footer ul {
 
 .faq-part details[open] {
   width: 1000px;
+
+  /* transition: all 1s ease-in-out; */
 }
 
 .faq-part details p {
@@ -1593,6 +1662,14 @@ footer ul {
 
 @media screen and (min-width: 1px) and (max-width: 768px) {
 
+  h1 {
+    font-size: 40px;
+  }
+
+  .landing-text p {
+    font-size: 20px;
+  }
+
     .social-media {
         display: flex;
         align-items: center;
@@ -2012,7 +2089,7 @@ details p {
 .landing-section-area h1 {
   font-family: "Arima", serif;
   color: rgba(84, 55, 13, 1);
-  font-size: clamp(24px, 4vw, 60px);
+  font-size: clamp(40px, 4vw, 60px);
   font-weight: bold;
   position: relative;
   top: 20%;
@@ -2494,6 +2571,12 @@ button {
 /* Responsive Design */
 
 @media screen and (min-width: 1441px) {
+
+  .landing-section-area {
+    max-width: 1200px;
+  }
+
+
   .header-class {
     padding: 0px 0px;
     
@@ -2501,6 +2584,7 @@ button {
   }
 
   .header-content {
+    width: 1200px;
     padding: 0px 0px;
   }
   .footer-class {
@@ -2510,6 +2594,7 @@ button {
   }
 
   .footer-content {
+    width: 1200px;
     padding: 0px 0px;
   }
 }
@@ -2541,6 +2626,7 @@ button {
 
    .landing-text {
     animation: unset;
+    width: 250px;
   }
   
   .yellow-image {
@@ -2864,7 +2950,7 @@ is this rigth
 
     font-family: "Arima", serif;
 
-    font-size: 26px;
+    font-size: 40px;
 
     line-height: 1;
 
@@ -2878,7 +2964,7 @@ is this rigth
 
     font-family: "Palanquin", serif;
 
-    font-size: 16px;
+    font-size: 20px;
 
     line-height: 1.2;
 

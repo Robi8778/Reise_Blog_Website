@@ -81,6 +81,10 @@
 
 /* HERE STARTS THE LANDINGSECTION-AREA OF PAGE ONE */
 
+main {
+  width: 100%;
+}
+
 .page-one-main-area {
   display: flex;
   justify-content: center;
@@ -91,14 +95,32 @@
 
 /* Styling Side 2 */
 
+/* THIS IS EXTRA IS IT RIGTH */
+
+.landing-section-page-one {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  display: flex;
+  
+}
+
+
+
+
+
+
+
+
+
 .article {
   width: 100%;
   max-width: 1440px;
-  margin: 88px auto 22px;
+  margin: 88px auto 22px auto;
   padding: 0 120px;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   font-family: "Palanquin", serif;
   font-weight: 400;
 
