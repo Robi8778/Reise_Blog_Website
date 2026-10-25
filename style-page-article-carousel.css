@@ -257,7 +257,7 @@ h1 {
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 1440px;
+    width: 1330px;
     padding-left: 120px;
     padding-right: 120px;
 }
@@ -716,14 +716,14 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
 
 /* HERE STARTS THE AREA OF THE SLIDER MEDIA QUARRIES */
 
-@media screen and (min-width: 1400px) and (max-width: 1439px) {
+@media screen and (min-width: 1400px) and (max-width: 1441px) {
 
 .slider-rotate-area {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 1340px;
+    width: 1325px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -737,7 +737,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 1300px;
+    width: 1285px;
     padding-left: 100px;
     padding-right: 100px;
 }
@@ -780,7 +780,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 1200px;
+    width: 1185px;
     padding-left: 80px;
     padding-right: 80px;
 }
@@ -827,7 +827,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 1100px;
+    width: 1085px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -875,7 +875,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 1000px;
+    width: 985px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -923,7 +923,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 900px;
+    width: 885px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -971,7 +971,7 @@ box-shadow: -0px 0px 1px rgba(3, 7, 18, 0.05),
     align-items: center;
     justify-content: center;
     height: 80%;
-    width: 800px;
+    width: 785px;
     padding-left: 50px;
     padding-right: 50px;
 }
@@ -3761,7 +3761,7 @@ h1 {
 /* SLIDER BOX */
 
 .slider_bb_container {
-    width: 350px; 
+    width: 340px; 
     height: 300px;
     overflow: hidden;
     display: flex;
